@@ -769,15 +769,3 @@ footer .footRight p {
   cursor: pointer;
   z-index: 8;
 }
-
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  background-image: url(../_img/mainvisual_prev_arrow.svg) !important;
-  opacity: 0.8;
-}
-
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  background-image: url(../_img/mainvisual_next_arrow.svg) !important;
-  opacity: 0.8;
-}
