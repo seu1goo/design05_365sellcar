@@ -1,0 +1,679 @@
+@charset "utf-8";
+
+/* mainCon */
+#mainCon {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 6em;
+}
+
+#mainCon .mainVisual .swiper-slide {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 7.6em);
+  background: no-repeat center / cover;
+  z-index: 2;
+}
+
+#mainCon .mainVisual .swiper-slide:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 3;
+}
+
+#mainCon .mainVisual .visual01 {
+  background-image: url('../_img/main_visual03.png');
+}
+
+#mainCon .mainVisual .visual02 {
+  background-image: url('../_img/main_visual02.png');
+}
+
+#mainCon .mainVisual .visual03 {
+  background-image: url('../_img/main_visual01.png');
+}
+
+#mainCon .mainVisual .swiper-slide .visualTit {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 4;
+}
+
+#mainCon .mainVisual .swiper-slide .visualTit h2 {
+  margin-bottom: 0.6em;
+  font-size: 6rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+#mainCon .mainVisual .swiper-slide .visualTit h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.9;
+}
+
+#mainCon .mainVisual .visualPagination {
+  position: absolute;
+  width: 13em;
+  bottom: 23%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+#mainCon .mainVisual .visualPagination .swiper-button-prev,
+#mainCon .mainVisual .visualPagination .swiper-button-next {
+  top: 0 !important;
+}
+
+#mainCon .mainVisual .visualPagination .swiper-button-prev {
+  left: 0 !important;
+}
+
+#mainCon .mainVisual .visualPagination .swiper-button-next {
+  right: 0 !important;
+}
+
+#mainCon .mainVisual .visualPagination .swiper-button-prev:after,
+#mainCon .mainVisual .visualPagination .swiper-button-next:after {
+  font-size: 2rem !important;
+  font-weight: 600;
+  color: #ddd;
+}
+
+#mainCon .mainVisual .visualPagination .swiper-pagination {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mainCon .mainVisual .visualPagination .swiper-pagination-bullet {
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #ddd;
+  opacity: 0.6;
+  margin-right: 0.6em;
+}
+
+#mainCon .mainVisual .visualPagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+#mainCon .mainVisual .visualPagination .swiper-pagination-bullet-active {
+  width: 3.3em;
+  border-radius: 2em;
+  opacity: 0.9;
+}
+
+#mainCon .counForm {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3;
+}
+
+/* ourWork */
+#ourWork .workIcon {
+  float: right;
+}
+
+#ourWork .workIcon h5 {
+  position: relative;
+  margin-bottom: 1.25em;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #666;
+}
+
+#ourWork .workIcon h5:before {
+  content: '';
+  position: absolute;
+  top: 0.8em;
+  left: -6.6em;
+  display: block;
+  width: 5.4em;
+  height: 2px;
+  background-color: #666;
+}
+
+#ourWork .workIcon .workDetail {
+  position: absolute;
+  top: 4em;
+  right: 0;
+}
+
+#ourWork .workIcon .workDetail>div {
+  float: left;
+  margin-left: 1.3em;
+}
+
+#ourWork .workIcon .workDetail div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+#ourWork .workIcon .workDetail div a:hover {
+  transform: translateY(-10px);
+}
+
+#ourWork .workIcon .workDetail div a .iconArea {
+  position: relative;
+  width: 8em;
+  height: 8em;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+#ourWork .workIcon .workDetail div a:hover .iconArea,
+#ourWork .workIcon .workDetail div a:focus .iconArea {
+  border-color: #0014A7;
+}
+
+#ourWork .workIcon .workDetail div a .iconArea svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40%;
+  fill: #ccc;
+}
+
+#ourWork .workIcon .workDetail div a:hover .iconArea svg,
+#ourWork .workIcon .workDetail div a:focus .iconArea svg {
+  fill: #0014A7 !important;
+}
+
+#ourWork .workIcon .workDetail div a p {
+  margin-top: 0.8em;
+  text-align: center;
+  color: #ccc;
+  transition: all 0.5s;
+}
+
+#ourWork .workIcon .workDetail div a:hover p {
+  color: #0014A7;
+}
+
+/* recommendation */
+#recommendation .titArea {
+  text-align: left;
+}
+
+#recommendation .recoList li {
+  float: left;
+  width: calc((100% - 3.9em) / 4);
+  margin-right: 1.3em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#recommendation .recoList li:last-child {
+  margin-right: 0;
+}
+
+#recommendation .recoList li figure {
+  width: 100%;
+}
+
+#recommendation .recoList li figure img {
+  width: 100%;
+}
+
+#recommendation .recoList li .txtArea {
+  padding: 1.3em;
+}
+
+#recommendation .recoList li .txtArea h5 {
+  margin-bottom: 0.45em;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+#recommendation .recoList li .txtArea h5 span {
+  display: block;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+#recommendation .recoList li .txtArea p {
+  margin-bottom: 1.4em;
+  font-size: 1.4rem;
+}
+
+#recommendation .recoList li .txtArea table {
+  width: 100%;
+}
+
+#recommendation .recoList li .txtArea table th {
+  padding: 0.5em;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+#recommendation .recoList li .txtArea table td {
+  padding: 0.5em;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+}
+
+/* counseling */
+#counseling {
+  width: 100%;
+  padding-bottom: 10em;
+  margin-bottom: 0;
+  background: url('../_img/main_counseling_bg.png') no-repeat bottom center;
+}
+
+#counseling .titArea {
+  float: left;
+  width: calc((50% - 2em) / 2);
+  margin-right: 1.3em;
+}
+
+#counseling article {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 20em;
+  margin-right: 1.3em;
+}
+
+#counseling article .txtArea {
+  position: relative;
+  z-index: 3;
+}
+
+#counseling article .txtArea h5 {
+  color: #fff;
+}
+
+#counseling article .txtArea h3 {
+  margin-top: 0.3em;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#counseling .count {
+  float: left;
+  width: calc((50% - 2em) / 2);
+}
+
+#counseling .count .counTotal,
+#counseling .count .counCheck {
+  position: relative;
+  width: 100%;
+  height: 9.3em;
+  padding: 1.3em;
+  background: no-repeat center / cover;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+#counseling .count .counTotal:after,
+#counseling .count .counCheck:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+#counseling .count .counTotal {
+  margin-bottom: 1.3em;
+  background-image: url('../_img/main_counseling01.png');
+}
+
+#counseling .count .counCheck {
+  background-image: url('../_img/main_counseling02.png');
+}
+
+#counseling .sellList {
+  width: calc(50% - 1em);
+  height: 20em;
+  margin-right: 0;
+  padding: 1.3em;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#counseling .sellList h5 {
+  margin-bottom: 1.3em;
+}
+
+#counseling .sellList .roofSell {
+  width: 100%;
+  height: calc(100% - 3.3em);
+}
+
+#counseling .sellList .roofSell ul {
+  width: 100%;
+}
+
+#counseling .sellList .roofSell ul li {
+  height: 2.5em;
+}
+
+#counseling .sellList .roofSell ul li div {
+  display: inline-block;
+}
+
+#counseling .sellList .roofSell ul li .sellState {
+  width: 12%;
+}
+
+#counseling .sellList .roofSell ul li .sellState span {
+  display: inline-block;
+  width: 90%;
+  padding: 0.3em;
+  background-color: #3276D8;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+
+#counseling .sellList .roofSell ul li .sellState span.sellCompletion {
+  background-color: #0014A7;
+}
+
+#counseling .sellList .roofSell ul li .sellTit {
+  width: 75%;
+  font-size: 1.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* procedure */
+#procedure {
+  padding: 10em 0;
+  background-color: #f6f7f7;
+}
+
+#procedure .titArea {
+  text-align: center;
+}
+
+#procedure .diagram ul li {
+  position: relative;
+  float: left;
+  width: calc((100% - 6.5em) / 6);
+  padding: 1.3em;
+  margin-right: 1.3em;
+  border: 2px solid #4BAEFA;
+  border-radius: 1em;
+  box-sizing: border-box;
+}
+
+#procedure .diagram ul li:last-child {
+  margin-right: 0;
+}
+
+#procedure .diagram ul li.diaCounseling {
+  border-color: #0091EA;
+}
+
+#procedure .diagram ul li.diaDiagnosis {
+  border-color: #0089CE;
+}
+
+#procedure .diagram ul li.diaContract {
+  border-color: #0062AD;
+}
+
+#procedure .diagram ul li.diaConsignment {
+  border-color: #00457A;
+}
+
+#procedure .diagram ul li.diaCompletion {
+  border-color: #002F4F;
+}
+
+#procedure .diagram ul li figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.6em;
+  margin-bottom: 1.3em;
+}
+
+#procedure .diagram ul li figure img {
+  height: 100%;
+}
+
+#procedure .diagram ul li .txtArea {
+  text-align: center;
+}
+
+#procedure .diagram ul li .txtArea h5 {
+  margin-bottom: 0.26em;
+  font-size: 1.9rem;
+}
+
+#procedure .diagram ul li .txtArea p {
+  font-size: 1.4rem;
+}
+
+/* guide */
+#guide {
+  position: relative;
+  height: 32em;
+  z-index: 2;
+}
+
+#guide:after {
+  content: '365 SELL CAR';
+  position: absolute;
+  bottom: -0.4em;
+  right: 0;
+  display: inline-block;
+  font-size: 18rem;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  text-align: right;
+  color: #eee;
+  z-index: 1;
+}
+
+#guide .titArea {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#guide .guideDetail {
+  position: relative;
+  float: left;
+  width: 100%;
+  z-index: 3;
+}
+
+#guide .guideDetail ul li {
+  position: absolute;
+  background: no-repeat center / cover;
+}
+
+#guide .guideDetail ul .guiSale {
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 30em;
+  background-image: url('../_img/main_guide01.png');
+}
+
+#guide .guideDetail ul .guiPurchase {
+  top: 0;
+  left: calc(20% + 1.3em);
+  width: 40%;
+  height: 14em;
+  background-image: url('../_img/main_guide02.png');
+}
+
+#guide .guideDetail ul .guiAssurance {
+  top: 15.3em;
+  left: calc(20% + 1.3em);
+  width: 25%;
+  height: 16.6em;
+  background-image: url('../_img/main_guide03.png');
+}
+
+#guide .guideDetail ul .guiFaq {
+  top: 15.3em;
+  left: calc(45% + 2.6em);
+  width: 30%;
+  height: 13.3em;
+  background-image: url('../_img/main_guide04.png');
+}
+
+#guide .guideDetail ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.3em;
+  box-sizing: border-box;
+}
+
+#guide .guideDetail ul li a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+
+#guide .guideDetail ul li a:hover:after,
+#guide .guideDetail ul li a:focus:after {
+  opacity: 1;
+}
+
+#guide .guideDetail ul li a h5 {
+  position: relative;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 3;
+  transition: all 0.4s;
+  word-break: keep-all;
+}
+
+#guide .guideDetail ul li a:hover h5,
+#guide .guideDetail ul li a:focus h5 {
+  color: #fff;
+}
+
+#guide .guideDetail ul li a h5:after {
+  content: '';
+  position: absolute;
+  bottom: -0.8em;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+
+#guide .guideDetail ul li a:hover h5:after,
+#guide .guideDetail ul li a:focus h5:after {
+  width: 105%;
+}
+
+/* review */
+#review .titArea {
+  text-align: right;
+}
+
+#review .swiper-container {
+  width: 90%;
+}
+
+#review .swiper-wrapper .swiper-slide {
+  width: 50%;
+  height: 16.6em;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+#review .swiper-wrapper .swiper-slide a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#review .swiper-wrapper .swiper-slide a figure {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#review .swiper-wrapper .swiper-slide a figure img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+#review .swiper-wrapper .swiper-slide a .txtArea {
+  width: 50%;
+  height: 100%;
+  padding: 1.3em;
+  box-sizing: border-box;
+}
+
+#review .swiper-wrapper .swiper-slide a .txtArea h5 {
+  margin-bottom: 0.3em;
+}
+
+#review .swiper-wrapper .swiper-slide a .txtArea p {
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  height: 100%;
+  overflow: hidden;
+  line-height: 1.4;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+}
+
+#review .swiper-button-prev,
+#review .swiper-button-next {
+  top: 65%;
+}
+
+#review .swiper-button-prev {
+  left: 0;
+}
+
+#review .swiper-button-next {
+  right: 0;
+}

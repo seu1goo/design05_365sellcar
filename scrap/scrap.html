@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- title -->
+  <title>365셀카</title>
+
+  <!-- reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- style -->
+  <link rel="stylesheet" href="../_css/common.css" />
+  <link rel="stylesheet" href="../_css/sub.css" />
+  <link rel="stylesheet" href="../_css/reactive.css" />
+
+  <!-- *jsLibrary -->
+  <!-- jQuery -->
+  <script src="../_js/jquery-3.5.1.min.js"></script>
+  <script src="../_js/jquery-ui.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
+    integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
+    crossorigin="anonymous"></script>
+  <!-- scrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- countup -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="../_js/jquery.counterup.min.js"></script>
+  <!-- vticker -->
+  <script src="../_js/jquery.vticker.min.js"></script>
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- script -->
+  <script defer src="../_js/common.js"></script>
+  <script defer src="../_js/sub.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner clearfix">
+        <div class="mobMenu">
+          <a href="javascript:void(0);">
+            <span class="material-icons">
+              menu
+            </span>
+          </a>
+        </div>
+        <h1 class="logo">
+          <a href="../index.html">
+            <img src="../_img/logo02_w.png" alt="365셀카">
+          </a>
+        </h1>
+        <nav>
+          <ul class="gnb clearfix">
+            <li class="mobNavClose">
+              <a href="javascript:void(0);">
+                <span class="material-icons">close</span>
+              </a>
+            </li>
+            <li><a href="../sale/sale.html">내차판매</a></li>
+            <li><a href="../purchase/purchase.html">내차구매</a></li>
+            <li><a href="../export/export.html">중고차수출</a></li>
+            <li><a href="../scrap/scrap.html">폐차서비스</a></li>
+            <li><a href="../guide/sale.html">매매가이드</a></li>
+            <li><a href="../community/notice.html">커뮤니티</a></li>
+          </ul>
+        </nav>
+        <button class="searchBtn">
+          <span class="material-icons">search</span>
+        </button>
+        <div class="searchArea">
+          <div class="searchDetail">
+            <div class="searchIn clearfix">
+              <input type="text" placeholder="검색어를 입력해주세요">
+              <div class="btnArea">
+                <button class="btn btn--white--reverse">검색</button>
+              </div>
+            </div>
+            <ul class="searchRecom clearfix">
+              <li><a href="../community/review.html">#매매후기</a></li>
+              <li><a href="../guide/sale.html">#제조사별 보증기간</a></li>
+              <li><a href="../guide/faq.html">#자주묻는질문</a></li>
+            </ul>
+          </div>
+          <button class="closeBtn">
+            <span class="material-icons">close</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- // header -->
+
+    <section id="subVisual" class="subScrapVisual scroll-spy">
+      <div class="inner">
+        <div class="txtArea back-to-position to-bottom delay-0">
+          <h2>SCRAP CARS SERVICE</h2>
+          <h3>
+            간편한 절차로 상담, 견인 및 말소까지 <br>
+            폐차 전 과정을 신속하게 처리해드립니다.
+          </h3>
+        </div>
+        <article class="counForm back-to-position to-top delay-1">
+          <div class="inner clearfix">
+            <div class="counTit">
+              <h4>365셀카 무료상담</h4>
+              <p class="blueTxt">내 차 가격, <br> 얼마인지 궁금하세요? <br></p>
+              <p>전문가와의 1:1 맞춤상담으로 차량판매를 도와드립니다.</p>
+            </div>
+            <form method="post">
+              <div class="counBtn">
+                <button class="btn btn--tone--down active">내차판매</button>
+                <button class="btn btn--tone--down">내차구매</button>
+                <button class="btn btn--tone--down">중고차수출</button>
+                <button class="btn btn--tone--down">폐차서비스</button>
+              </div>
+              <div class="counDetail">
+                <div class="counLocation">
+                  <label for="carType01">지역명</label>
+                  <input id="carType01" type="text" placeholder="필수) 지역명을 입력해주세요" name="input[userLocation]" required>
+                </div>
+                <div class="counCar">
+                  <label for="carType02">차량명</label>
+                  <input id="carType02" type="text" placeholder="필수) 제조사 및 차량명을 입력해주세요" name="input[carName]" required>
+                </div>
+                <div class="counCar">
+                  <label for="carType03">연 &ensp; 식</label>
+                  <input id="carType03" type="text" placeholder="선택) 제조사 및 차량명을 입력해주세요" name="input[carYear]">
+                </div>
+                <div class="counTel">
+                  <label for="carType04">연락처</label>
+                  <input id="carType04" type="tel" placeholder="필수) 연락처를 입력해주세요" name="input[userPhone]" required>
+                </div>
+              </div>
+              <div class="counCheck">
+                <div class="checks">
+                  <input type="checkbox" name="input[agreeYN]" id="perCheck" value="Y" checked required>
+                  <label for="perCheck">개인정보수집/이용 동의</label>
+                  <a href="javascript:void(0)" class="agreeFormBtn btn btn--reverse">개인정보 처리방침</a>
+                </div>
+                <div class="btnArea">
+                  <button class="btn">상담신청</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- // subVisual -->
+
+    <section id="subCon" class="subScrap">
+      <div class="inner">
+        <article class="list scroll-spy">
+          <div class="titArea back-to-position to-txt-right delay-0">
+            <strong>폐차서비스 이용 절차</strong>
+            <h4>Procedures for scrapping cars</h4>
+          </div>
+          <ul class="listArea clearfix back-to-position to-left delay-1">
+            <li>
+              <h6>1</h6>
+              <figure>
+                <img src="../_img/ico_sale01.png" alt="상담신청">
+              </figure>
+              <div class="txtArea">
+                <h5>상담신청</h5>
+                <p>
+                  "폐차서비스"에 차량 정보를 <br>
+                  입력하신 후 상담신청버튼을 눌러주세요.
+                </p>
+              </div>
+            </li>
+            <li>
+              <h6>2</h6>
+              <figure>
+                <img src="../_img/ico_export03.png" alt="차량 원부조회">
+              </figure>
+              <div class="txtArea">
+                <h5>차량 원부조회</h5>
+                <p>
+                  차량의 압류, 저당 상태를 확인합니다. <br>
+                  (압류나 저당이 있을 시 말소가 불가능합니다.)
+                </p>
+              </div>
+            </li>
+            <li>
+              <h6>3</h6>
+              <figure>
+                <img src="../_img/ico_sale05.png" alt="차량탁송">
+              </figure>
+              <div class="txtArea">
+                <h5>차량탁송</h5>
+                <p>
+                  입금확인이 완료되면 <br>
+                  담당자가 차량을 탁송합니다.
+                </p>
+              </div>
+            </li>
+            <li>
+              <h6>4</h6>
+              <figure>
+                <img src="../_img/ico_sale04.png" alt="폐차말소 대행">
+              </figure>
+              <div class="txtArea">
+                <h5>폐차말소 대행</h5>
+                <p>
+                  차량이 폐차장에 입고되면 해당 관청<br>
+                  또는 차량등록사업소에서 말소를 진행합니다.
+                </p>
+              </div>
+            </li>
+            <li>
+              <h6>5</h6>
+              <figure>
+                <img src="../_img/ico_export05.png" alt="말소증명서 송부">
+              </figure>
+              <div class="txtArea">
+                <div class="txtArea">
+                  <h5>말소증명서 송부</h5>
+                  <p>
+                    담당자가 말소 증명서를 발급하여 <br>
+                    FAX 또는 모바일 기기로 전송해드립니다.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h6>6</h6>
+              <figure>
+                <img src="../_img/ico_scrap06.png" alt="폐차비 지급">
+              </figure>
+              <div class="txtArea">
+                <h5>폐차비 지급</h5>
+                <p>
+                  모든 절차가 완료되면 <br>
+                  폐차비를 온라인 송금해드립니다.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article class="document scroll-spy">
+          <div class="titArea back-to-position to-bottom delay-0">
+            <strong>계약 시 필요서류</strong>
+            <h4>Required Documents</h4>
+          </div>
+          <ul class="docuBtn clearfix back-to-position to-top delay-1">
+            <li class="active"><a href="javascript:void(0)">개인</a></li>
+            <li><a href="javascript:void(0)">개인사업자</a></li>
+            <li><a href="javascript:void(0)">법인사업자</a></li>
+            <li><a href="javascript:void(0)">압류차량 폐차말소</a></li>
+          </ul>
+          <ul class="mobDocuBtn clearfix back-to-position to-top delay-1">
+            <li class="active"><a href="javascript:void(0)">개인</a></li>
+            <li><a href="javascript:void(0)">개인사업자</a></li>
+            <li><a href="javascript:void(0)">법인사업자</a></li>
+            <li><a href="javascript:void(0)">압류차량 폐차말소</a></li>
+          </ul>
+          <div class="docuCon clearfix back-to-position to-top delay-2">
+            <table>
+              <colgroup>
+                <col style="width: 10%;">
+                <col style="width: 22.5%;">
+                <col style="width: 22.5%;">
+                <col style="width: 22.5%;">
+                <col style="width: 22.5%;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>개인</th>
+                  <th>개인사업자</th>
+                  <th>법인사업자</th>
+                  <th>압류차량 폐차말소</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>필요서류</td>
+                  <td class="active">
+                    <ul>
+                      <li>신분증</li>
+                      <li>인감증명서 1부</li>
+                      <li>자동차등록증</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>신분증</li>
+                      <li>사업자등록증 1부</li>
+                      <li>사업사실증명서 1부 (말소 포함)</li>
+                      <li>자동차등록증</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>법인인감증명서 1부 (3개월 이내)</li>
+                      <li>법인인감도장</li>
+                      <li>사업자등록증 1부 (사본)</li>
+                      <li>법원 등기부등본 1부 (1개월 이내, 말소 포함)</li>
+                      <li>자동차등록증</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>신분증</li>
+                      <li>자동차등록증</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mobDocuCon clearfix back-to-position to-top delay-2">
+            <table>
+              <colgroup>
+                <col style="width: 20%;">
+                <col style="width: 80%;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>개인</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>필요서류</td>
+                  <td class="active">
+                    <ul>
+                      <li>신분증</li>
+                      <li>인감증명서 1부</li>
+                      <li>자동차등록증</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <colgroup>
+                <col style="width: 20%;">
+                <col style="width: 80%;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>개인사업자</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>필요서류</td>
+                  <td>
+                    <ul>
+                      <li>신분증</li>
+                      <li>사업자등록증 1부</li>
+                      <li>사업사실증명서 1부 (말소 포함)</li>
+                      <li>자동차등록증</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <colgroup>
+                <col style="width: 20%;">
+                <col style="width: 80%;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>법인사업자</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>필요서류</td>
+                  <td>
+                    <ul>
+                      <li>법인인감증명서 1부 (3개월 이내)</li>
+                      <li>법인인감도장</li>
+                      <li>사업자등록증 1부 (사본)</li>
+                      <li>법원 등기부등본 1부 (1개월 이내, 말소 포함)</li>
+                      <li>자동차등록증</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <colgroup>
+                <col style="width: 20%;">
+                <col style="width: 80%;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>압류차량 폐차말소</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>필요서류</td>
+                  <td>
+                    <ul>
+                      <li>신분증</li>
+                      <li>자동차등록증</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- // subScrap -->
+
+    <footer>
+      <article class="footCopy">
+        <div class="inner">
+          <ul>
+            <li><span>상호</span> OOOO</li>
+            <li><span>대표</span> OOO</li>
+            <li><span>주소</span> OO시 OO구 OOOO로 111</li>
+            <li><span>사업자등록번호</span> 111-11-11111</li>
+            <li><span>대표전화</span> 010-1234-5678</li>
+          </ul>
+          <div class="footLogo">
+            <a href="../index.html">
+              <img src="../_img/logo02_w.png" alt="365셀카">
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="footMenu">
+        <div class="inner clearfix">
+          <ul class="footNav clearfix">
+            <li><a href="javascript:void(0)">회사소개</a></li>
+            <li><a href="javascript:void(0)">이용약관</a></li>
+            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+          </ul>
+        </div>
+      </article>
+      <article class="footRight">
+        <div class="inner">
+          <p>© 2021 305Sellcar All Rights Reverved &amp; Designed by NAULAB</p>
+        </div>
+      </article>
+    </footer>
+    <!-- // footer -->
+
+    <button id="topBtn">
+      <span class="material-icons">
+        arrow_upward
+      </span>
+    </button>
+    <!-- // topBtn -->
+
+  </div>
+</body>
+
+</html>

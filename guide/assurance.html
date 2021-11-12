@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- title -->
+  <title>365셀카</title>
+
+  <!-- reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- style -->
+  <link rel="stylesheet" href="../_css/common.css" />
+  <link rel="stylesheet" href="../_css/sub.css" />
+  <link rel="stylesheet" href="../_css/reactive.css" />
+
+  <!-- *jsLibrary -->
+  <!-- jQuery -->
+  <script src="../_js/jquery-3.5.1.min.js"></script>
+  <script src="../_js/jquery-ui.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
+    integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
+    crossorigin="anonymous"></script>
+  <!-- scrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- countup -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="../_js/jquery.counterup.min.js"></script>
+  <!-- vticker -->
+  <script src="../_js/jquery.vticker.min.js"></script>
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- script -->
+  <script defer src="../_js/common.js"></script>
+  <script defer src="../_js/sub.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner clearfix">
+        <div class="mobMenu">
+          <a href="javascript:void(0);">
+            <span class="material-icons">
+              menu
+            </span>
+          </a>
+        </div>
+        <h1 class="logo">
+          <a href="../index.html">
+            <img src="../_img/logo02_w.png" alt="365셀카">
+          </a>
+        </h1>
+        <nav>
+          <ul class="gnb clearfix">
+            <li class="mobNavClose">
+              <a href="javascript:void(0);">
+                <span class="material-icons">close</span>
+              </a>
+            </li>
+            <li><a href="../sale/sale.html">내차판매</a></li>
+            <li><a href="../purchase/purchase.html">내차구매</a></li>
+            <li><a href="../export/export.html">중고차수출</a></li>
+            <li><a href="../scrap/scrap.html">폐차서비스</a></li>
+            <li><a href="../guide/sale.html">매매가이드</a></li>
+            <li><a href="../community/notice.html">커뮤니티</a></li>
+          </ul>
+        </nav>
+        <button class="searchBtn">
+          <span class="material-icons">search</span>
+        </button>
+        <div class="searchArea">
+          <div class="searchDetail">
+            <div class="searchIn clearfix">
+              <input type="text" placeholder="검색어를 입력해주세요">
+              <div class="btnArea">
+                <button class="btn btn--white--reverse">검색</button>
+              </div>
+            </div>
+            <ul class="searchRecom clearfix">
+              <li><a href="../community/review.html">#매매후기</a></li>
+              <li><a href="../guide/sale.html">#제조사별 보증기간</a></li>
+              <li><a href="../guide/faq.html">#자주묻는질문</a></li>
+            </ul>
+          </div>
+          <button class="closeBtn">
+            <span class="material-icons">close</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- // header -->
+
+    <section id="subVisual" class="subGuideVisual scroll-spy">
+      <div class="inner">
+        <div class="txtArea back-to-position to-bottom delay-0">
+          <h2>SALES GUIDE</h2>
+          <h3>
+            365셀카에서 제안하는 현명한 중고차 매매 가이드, <br>
+            당사는 수년간 쌓아온 노하우로 고객만족을 위해 최선을 다하고 있습니다.
+          </h3>
+        </div>
+        <article class="counForm back-to-position to-top delay-1">
+          <div class="inner clearfix">
+            <div class="counTit">
+              <h4>365셀카 무료상담</h4>
+              <p class="blueTxt">내 차 가격, <br> 얼마인지 궁금하세요? <br></p>
+              <p>전문가와의 1:1 맞춤상담으로 차량판매를 도와드립니다.</p>
+            </div>
+            <form method="post">
+              <div class="counBtn">
+                <button class="btn btn--tone--down active">내차판매</button>
+                <button class="btn btn--tone--down">내차구매</button>
+                <button class="btn btn--tone--down">중고차수출</button>
+                <button class="btn btn--tone--down">폐차서비스</button>
+              </div>
+              <div class="counDetail">
+                <div class="counLocation">
+                  <label for="carType01">지역명</label>
+                  <input id="carType01" type="text" placeholder="필수) 지역명을 입력해주세요" name="input[userLocation]" required>
+                </div>
+                <div class="counCar">
+                  <label for="carType02">차량명</label>
+                  <input id="carType02" type="text" placeholder="필수) 제조사 및 차량명을 입력해주세요" name="input[carName]" required>
+                </div>
+                <div class="counCar">
+                  <label for="carType03">연 &ensp; 식</label>
+                  <input id="carType03" type="text" placeholder="선택) 제조사 및 차량명을 입력해주세요" name="input[carYear]">
+                </div>
+                <div class="counTel">
+                  <label for="carType04">연락처</label>
+                  <input id="carType04" type="tel" placeholder="필수) 연락처를 입력해주세요" name="input[userPhone]" required>
+                </div>
+              </div>
+              <div class="counCheck">
+                <div class="checks">
+                  <input type="checkbox" name="input[agreeYN]" id="perCheck" value="Y" checked required>
+                  <label for="perCheck">개인정보수집/이용 동의</label>
+                  <a href="javascript:void(0)" class="agreeFormBtn btn btn--reverse">개인정보 처리방침</a>
+                </div>
+                <div class="btnArea">
+                  <button class="btn">상담신청</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- // subVisual -->
+
+    <section id="subCon" class="subGuide">
+      <div class="inner">
+        <ul class="guideBtn clearfix">
+          <li><a href="../guide/sale.html">판매 가이드</a></li>
+          <li><a href="../guide/purchase.html">구매 가이드</a></li>
+          <li class="active"><a href="../guide/assurance.html">제조사별 보증기간</a></li>
+          <li><a href="../guide/faq.html">자주묻는질문</a></li>
+        </ul>
+        <div class="guideTable">
+          <ul class="motorBtn clearfix scroll-spy">
+            <li class="domesticBtn active back-to-position to-top delay-0"><a href="javascript:void(0)">국내 제조사</a></li>
+            <li class="foreignBtn back-to-position to-top delay-1"><a href="javascript:void(0)">수입 제조사</a></li>
+          </ul>
+          <div class="guideCon">
+            <div class="domesticCon">
+              <article class="guideDetail guideHyundai scroll-spy">
+                <div class="titArea back-to-position to-txt-right delay-0">
+                  <strong>현대자동차</strong>
+                  <h4>Hyundai Motors</h4>
+                </div>
+                <div class="motorCon clearfix back-to-position to-left delay-1">
+                  <table>
+                    <colgroup>
+                      <col style="width: 40%;">
+                      <col style="width: 30%;">
+                      <col style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>차종</th>
+                        <th>차제 및 일반부품</th>
+                        <th>엔진 및 동력전달 주요부품</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          i30 , i30cw, i40, 그랜저(HG / TG), 라비타에쿠스(LZ), 맥스크루즈, <br>
+                          베라크루즈, 벨로스터(FS), 소나타(EF / HEV / LF / NF / YF), 싼타페(DM), <br>
+                          아반떼(HD / HEV / MD / XD), 엑센트(RB), 제네시스, 제네시스 쿠페
+                        </td>
+                        <td>3년 / 6만km</td>
+                        <td>
+                          5년 / 10만km <br>
+                          * 하이브리드 전용부품 <br>
+                          - 아반떼HEV : 6년 / 12만km <br>
+                          - 쏘나타 HEV : 10sus / 20만km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>에쿠스(VI), 제네시스 프라다</td>
+                        <td>5년 / 12만km</td>
+                        <td>5년 / 12만km</td>
+                      </tr>
+                      <tr>
+                        <td>싼타페(CM), 투싼 ix</td>
+                        <td>2년 / 4만km</td>
+                        <td>5년 / 10만km</td>
+                      </tr>
+                      <tr>
+                        <td>기타 차량</td>
+                        <td>2년 / 4만km</td>
+                        <td>3년 / 6만km</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+              <article class="guideDetail guideKia scroll-spy">
+                <div class="titArea back-to-position to-txt-left delay-0">
+                  <strong>기아자동차</strong>
+                  <h4>Kia Motors</h4>
+                </div>
+                <div class="motorCon clearfix back-to-position to-right delay-1">
+                  <table>
+                    <colgroup>
+                      <col style="width: 40%;">
+                      <col style="width: 30%;">
+                      <col style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>차종</th>
+                        <th>차제 및 일반부품</th>
+                        <th>엔진 및 동력전달 주요부품</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          K5, K3, K7, 레이, 레이전기차 포르테, 모하비, <br>
+                          포르테 쿱, 오피러스(06.21이후판매차량)
+                        </td>
+                        <td>3년 / 6만km</td>
+                        <td>5년 / 10만km</td>
+                      </tr>
+                      <tr>
+                        <td>스포티지R, 쏘렌토R, 올 뉴 프라이드</td>
+                        <td>2년 / 4만km</td>
+                        <td>5년 / 10만km</td>
+                      </tr>
+                      <tr>
+                        <td>뉴카렌스, 모닝, 쏘울, 올뉴모닝</td>
+                        <td>2년 / 4만km</td>
+                        <td>3년 / 6만km</td>
+                      </tr>
+                      <tr>
+                        <td>그랜드 카니발, 그랜버드, 봉고3</td>
+                        <td>2년 / 4만km</td>
+                        <td>3년 / 6만km</td>
+                      </tr>
+                      <tr>
+                        <td>오피러스(06.21이전판매차량)</td>
+                        <td>3년 / 6만km</td>
+                        <td>3년 / 6만km</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+              <article class="guideDetail guideChevrolet scroll-spy">
+                <div class="titArea back-to-position to-txt-right delay-0">
+                  <strong>쉐보레</strong>
+                  <h4>Chevrolet</h4>
+                </div>
+                <div class="motorCon clearfix back-to-position to-left delay-1">
+                  <table>
+                    <colgroup>
+                      <col style="width: 40%;">
+                      <col style="width: 30%;">
+                      <col style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>차종</th>
+                        <th>차제 및 일반부품</th>
+                        <th>엔진 및 동력전달 주요부품</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>말리부, 아베오, 알페온, 올란도, 캡티바, 크루즈</td>
+                        <td>
+                          5년 / 10만km <br>
+                          * 명의 변경시 3년/6만km
+                        </td>
+                        <td>5년 / 10만km</td>
+                      </tr>
+                      <tr>
+                        <td>스파크</td>
+                        <td>
+                          3년 / 6만km <br>
+                          * 명의 변경 시 2년 / 4만km
+                        </td>
+                        <td>
+                          3년 / 6만km <br>
+                          * 명의 변경 시 2년 / 4만km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>카마로</td>
+                        <td>3년 / 6만km</td>
+                        <td>3년 / 6만km</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+              <article class="guideDetail guideSamsung scroll-spy">
+                <div class="titArea back-to-position to-txt-left delay-0">
+                  <strong>르노삼성</strong>
+                  <h4>Renault Samsungm</h4>
+                </div>
+                <div class="motorCon clearfix back-to-position to-right delay-1">
+                  <table>
+                    <colgroup>
+                      <col style="width: 40%;">
+                      <col style="width: 30%;">
+                      <col style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>차종</th>
+                        <th>차제 및 일반부품</th>
+                        <th>엔진 및 동력전달 주요부품</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>전 차종</td>
+                        <td>3년 / 6만km</td>
+                        <td>5년 / 10만km</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+              <article class="guideDetail guideSsangyong scroll-spy">
+                <div class="titArea back-to-position to-txt-right delay-0">
+                  <strong>쌍용자동차</strong>
+                  <h4>Ssangyong Motors</h4>
+                </div>
+                <div class="motorCon clearfix back-to-position to-left delay-1">
+                  <table>
+                    <colgroup>
+                      <col style="width: 40%;">
+                      <col style="width: 30%;">
+                      <col style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>차종</th>
+                        <th>차제 및 일반부품</th>
+                        <th>엔진 및 동력전달 주요부품</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>로디우스, 렉스턴, 액티언, 액티언 스포츠, 카이런</td>
+                        <td>2년 / 4만km</td>
+                        <td>3년 / 6만km</td>
+                      </tr>
+                      <tr>
+                        <td>체어맨 H</td>
+                        <td>3년 / 6만km</td>
+                        <td>5년 / 10만km</td>
+                      </tr>
+                      <tr>
+                        <td>체어맨 W</td>
+                        <td>5년 / 10만km</td>
+                        <td>3년 / 6만km</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+            <div class="foreignCon scroll-spy">
+              <article class="guideDetail guideForeign">
+                <div class="titArea back-to-position to-txt-right delay-0">
+                  <strong>외제차량</strong>
+                  <h4>Imported Vehicle</h4>
+                </div>
+                <div class="motorCon clearfix back-to-position to-left delay-1">
+                  <table>
+                    <colgroup>
+                      <col style="width: 40%;">
+                      <col style="width: 30%;">
+                      <col style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>제조사</th>
+                        <th>차제 및 일반부품</th>
+                        <th>엔진 및 동력전달 주요부품</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>BMW</td>
+                        <td>2년 / 4만km</td>
+                        <td>
+                          3년 / 6만km <br>
+                          프리미엄서비스 패키지 : 5년 / 10km <br>
+                          배출가스 관련부품 : 7년 / 12km <br>
+                          그 외 관련 부품 : 5년 / 8km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>GM</td>
+                        <td>-</td>
+                        <td>
+                          소모성 제외한 엔진 부품 : 2년 / 4km <br>
+                          Conversion Kit : 1년 / 2km <br>
+                          긴급출동 서비스 : 2년 / 4km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>닛산</td>
+                        <td>4년 / 10만km</td>
+                        <td>
+                          4년/10km <br>
+                          배출가스 관련부품 : 5년 / 8km <br>
+                          정화용촉매 : 7년 / 12km <br>
+                          특별무상교환부품 : 2년 / 4 km <br>
+                          와이퍼블레이드 : 2회 <br>
+                          에어 클리너 : 1회 <br>
+                          브레이크패드 : 1회 무상교환
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>롤스로이스</td>
+                        <td>3년 / 6만km</td>
+                        <td>
+                          파워트레인 : 5년 / 10km <br>
+                          배출가스 관련 부품 : 10년 / 16km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>렉서스</td>
+                        <td>4년 / 10만km</td>
+                        <td>
+                          부식보증 : 6년 (주행거리 무관) <br>
+                          배출가스관련부품 : 7년 / 12km <br>
+                          전자제어장치 : 7년 / 12km <br>
+                          타이어 : 제작회사에서 보증 <br>
+                          그 외 관련부품 : 5년 / 8km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>미니</td>
+                        <td>2년</td>
+                        <td>
+                          3년 / 6만km <br>
+                          배출가스 관련부품 : 7년 / 12km <br>
+                          그 외 관련 부품 : 5년 / 8km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>벤츠</td>
+                        <td>2년</td>
+                        <td>
+                          3년 / 10km <br>
+                          동력전달 계통부품 : 3년 / 6만km <br>
+                          배출가스 관련부품 : 5년 / 8만km <br>
+                          정화용 촉재 : 7년 / 12만km <br>
+                          전자 제어 장치 : 7년 / 12만km <br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>볼보</td>
+                        <td>-</td>
+                        <td>
+                          배출가스 관련부품 : 10년 / 16km <br>
+                          정화용 촉매 : 7년 / 12km <br>
+                          전자제어장치 : 7년 / 12km <br>
+                          타이어 : 제작회사에서 보증
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>샤브</td>
+                        <td>2년 / 4km</td>
+                        <td>
+                          3년 / 6km <br>
+                          냉난방장치 : 2년 / 4km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>스마트</td>
+                        <td>-</td>
+                        <td>
+                          2년 / 6km <br>
+                          정화용촉매 : 7년 / 12km <br>
+                          전자제어장치 : 7년 / 12km <br>
+                          그 외 관련부품 : 5년 / 8km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>아우디</td>
+                        <td>3년</td>
+                        <td>
+                          차체부식 : 12년 <br>
+                          페이트결함 : 3년 <br>
+                          배출가스관련부품 : 7년 / 12km <br>
+                          전자제어장치 : 7년 / 12km <br>
+                          타이어 : 제작회사에서 보증 <br>
+                          그 외 관련 부품 : 5년 / 8km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>인피니티</td>
+                        <td>4년 / 10만km</td>
+                        <td>
+                          4년 / 10km <br>
+                          배출가스 관련 부품 : 5년 / 8km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>재규어</td>
+                        <td>3년 / 10km</td>
+                        <td>부식보증 : 6년</td>
+                      </tr>
+                      <tr>
+                        <td>지프</td>
+                        <td>3년 / 6km</td>
+                        <td>
+                          냉난방장치 : 3년 / 6km <br>
+                          소모성부품 : 1년 / 2km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>캐딜락</td>
+                        <td>3년 / 6km</td>
+                        <td>매출가스 관련 부품 : 5년 / 8km</td>
+                      </tr>
+                      <tr>
+                        <td>크라이슬러</td>
+                        <td>3년 / 6km</td>
+                        <td>
+                          냉난방장치 : 3년 / 6km <br>
+                          소모성부품 : 1년 / 2km
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>포르쉐</td>
+                        <td>-</td>
+                        <td>
+                          마모 및 균열품목 제외한 모든 부품 : 4년 <br>
+                          부식방지 : 10년 <br>
+                          차량색상 : 3년
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>폭스바겐</td>
+                        <td>3년</td>
+                        <td>
+                          부품보증 : 2년 <br>
+                          부식보증 : 12년
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>혼다</td>
+                        <td>4년 / 10km</td>
+                        <td>
+                          부품 보증 :1년 <br>
+                          배출가스 관련부품 : 10년 / 16km <br>
+                          정화용 촉매 : 7년 / 12km <br>
+                          전자제어장치 : 7년 / 12km <br>
+                          그 외 관련부품 : 5년 / 8km
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // subGuide -->
+
+    <footer>
+      <article class="footCopy">
+        <div class="inner">
+          <ul>
+            <li><span>상호</span> OOOO</li>
+            <li><span>대표</span> OOO</li>
+            <li><span>주소</span> OO시 OO구 OOOO로 111</li>
+            <li><span>사업자등록번호</span> 111-11-11111</li>
+            <li><span>대표전화</span> 010-1234-5678</li>
+          </ul>
+          <div class="footLogo">
+            <a href="../index.html">
+              <img src="../_img/logo02_w.png" alt="365셀카">
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="footMenu">
+        <div class="inner clearfix">
+          <ul class="footNav clearfix">
+            <li><a href="javascript:void(0)">회사소개</a></li>
+            <li><a href="javascript:void(0)">이용약관</a></li>
+            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+          </ul>
+        </div>
+      </article>
+      <article class="footRight">
+        <div class="inner">
+          <p>© 2021 305Sellcar All Rights Reverved &amp; Designed by NAULAB</p>
+        </div>
+      </article>
+    </footer>
+    <!-- // footer -->
+
+    <button id="topBtn">
+      <span class="material-icons">
+        arrow_upward
+      </span>
+    </button>
+    <!-- // topBtn -->
+
+  </div>
+
+  <script>
+    $('.guideTable').each(function () {
+      var motorBtn = $('.motorBtn > li');
+      var motorCon = $('.guideCon > div');
+  
+      motorCon.hide().eq(0).show();
+      motorBtn.click(function (e) {
+        e.preventDefault();
+  
+        var target = $(this);
+        var index = target.index();
+  
+        motorCon.css({
+          display: 'none'
+        });
+        motorCon.eq(index).css({
+          display: 'block'
+        });
+  
+        target.addClass('active');
+        target.siblings().removeClass('active')
+      });
+    });
+    // guideTable
+  </script>
+</body>
+
+</html>
+

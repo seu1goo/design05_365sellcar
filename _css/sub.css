@@ -1,0 +1,917 @@
+@charset "utf-8";
+
+/* subVisual */
+#subVisual {
+  position: relative;
+  width: 100%;
+  height: 46.6em;
+  margin-bottom: 6.6em;
+  background: no-repeat center / cover;
+}
+
+#subVisual:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+#subVisual.subSaleVisual {
+  background-image: url('../_img/sub_visual_sale.png');
+}
+
+#subVisual.subPurchaseVisual {
+  background-image: url('../_img/sub_visual_purchase.png');
+}
+
+#subVisual.subExportVisual {
+  background-image: url('../_img/sub_visual_export.png');
+}
+
+#subVisual.subScrapVisual {
+  background-image: url('../_img/sub_visual_scrap.png');
+}
+
+#subVisual.subCommunityVisual {
+  background-image: url('../_img/sub_visual_community.png');
+}
+
+#subVisual.subGuideVisual {
+  background-image: url('../_img/sub_visual_guide.png');
+}
+
+#subVisual .txtArea {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+#subVisual .txtArea h2 {
+  margin-bottom: 1em;
+  font-size: 3.6em;
+  font-weight: 700;
+  color: #fff;
+}
+
+#subVisual .txtArea h3 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.9;
+}
+
+#subVisual .counForm {
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* subCon */
+#subCon strong {
+  display: block;
+  margin-left: 0.3em;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #666;
+}
+
+#subCon h4 {
+  margin-bottom: 0.8em;
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #333;
+}
+
+#subCon h5 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+#subCon .titArea {
+  margin-bottom: 2.6em;
+}
+
+#subCon article {
+  margin-bottom: 10em;
+}
+
+#subCon .list .listArea li {
+  position: relative;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 2.6em) / 3);
+  height: 13.3em;
+  margin-right: 1.3em;
+  padding: 1.3em;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+#subCon .list .listArea li:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 1.3em rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+#subCon .list .listArea li:nth-child(1),
+#subCon .list .listArea li:nth-child(2),
+#subCon .list .listArea li:nth-child(3) {
+  margin-bottom: 1.3em;
+}
+
+#subCon .list .listArea li:nth-child(3),
+#subCon .list .listArea li:nth-child(6) {
+  margin-right: 0;
+}
+
+#subCon .list .listArea li h6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20rem;
+  font-weight: 700;
+  color: #eee;
+  z-index: 1;
+}
+
+#subCon .list .listArea li figure {
+  position: relative;
+  width: 8.6em;
+  height: 6em;
+  justify-items: flex-end;
+  margin-right: 1.3em;
+  z-index: 2;
+}
+
+#subCon .list .listArea li figure img {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+#subCon .list .listArea li .txtArea h5 {
+  margin-bottom: 0.8em;
+  word-break: keep-all;
+}
+
+#subCon .list .listArea li .txtArea p {
+  word-break: keep-all;
+}
+
+#subCon .document .titArea {
+  text-align: center;
+}
+
+#subCon .document .docuBtn {
+  margin-bottom: 2.6em;
+}
+
+#subCon .document .docuBtn li {
+  float: left;
+  width: calc((100% - 5.2em) / 5);
+  height: 5.2em;
+  margin-right: 1.3em;
+  border: 2px solid #f4f4f4;
+  background-color: #f4f4f4;
+  transition: all 0.3s;
+}
+
+#subCon .document .docuBtn li:last-child {
+  margin-right: 0;
+}
+
+#subCon .document .docuBtn li:hover {
+  border-color: #0014A7;
+  color: #0014A7;
+}
+
+#subCon .document .docuBtn li.active {
+  border-color: #0014A7;
+  background-color: #0014A7;
+}
+
+#subCon .document .docuBtn li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 4.4em;
+}
+
+#subCon .document .docuBtn li.active a {
+  color: #fff;
+}
+
+#subCon .document .mobDocuBtn {
+  display: none;
+}
+
+#subCon .document .docuCon table {
+  width: 100%;
+  text-align: center;
+}
+
+#subCon .document .docuCon table thead tr th,
+#subCon .document .docuCon table tbody {
+  border: 1px solid #ccc;
+}
+
+#subCon .document .docuCon table thead tr th {
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 0.5em 0;
+  background-color: #eee;
+}
+
+#subCon .document .docuCon table tbody td {
+  padding: 0.5em 0;
+  vertical-align: top;
+  border: 1px solid #ccc;
+}
+
+#subCon .document .docuCon table tbody td:first-child {
+  text-align: center;
+}
+
+#subCon .document .docuCon table tbody td ul li {
+  margin: 0 1.25em;
+  padding-bottom: 0.5em;
+  list-style: decimal;
+  font-size: 1.6rem;
+  text-align: left;
+  letter-spacing: -0.08em;
+}
+
+#subCon .document .docuCon table tbody tr td.active {
+  font-weight: 500;
+  color: #0014A7;
+}
+
+#subCon .document .mobDocuCon {
+  display: none;
+}
+
+/* subPurchase */
+#subCon.subPurchase .document .docuBtn li {
+  width: calc((100% - 2.6em) / 3);
+}
+
+/* subExport */
+#subCon .whatExport .titArea {
+  text-align: right;
+}
+
+#subCon .whatExport .exportDetail {
+  position: relative;
+  height: 25.3em;
+}
+
+#subCon .whatExport .exportDetail h5 {
+  display: inline-block;
+  margin-bottom: 0.7em;
+  font-size: 2.8rem;
+}
+
+#subCon .whatExport .exportDetail p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+#subCon .whatExport .exportDetail .bg figure {
+  position: absolute;
+}
+
+#subCon .whatExport .exportDetail .bg .container {
+  top: 4%;
+  right: 36%;
+  width: 20em;
+  height: auto;
+  background-color: #333;
+  z-index: 2;
+}
+
+#subCon .whatExport .exportDetail .bg .ship {
+  top: 20%;
+  right: 0;
+  width: 40em;
+  height: auto;
+  background-color: #333;
+  z-index: 1;
+}
+
+#subCon .whatExport .exportDetail .bg figure img {
+  width: 100%;
+}
+
+#subCon .exportAdvantage .titArea {
+  text-align: center;
+}
+
+#subCon .exportAdvantage ul li {
+  position: relative;
+  float: left;
+  width: calc((100% - 5.2em) / 5);
+  height: 14em;
+  margin-right: 1.3em;
+  background: no-repeat center / cover;
+  text-align: center;
+}
+
+#subCon .exportAdvantage ul li.hard01 {
+  background-image: url('../_img/export_hard01.png');
+}
+
+#subCon .exportAdvantage ul li.hard02 {
+  background-image: url('../_img/export_hard02.png');
+}
+
+#subCon .exportAdvantage ul li.hard03 {
+  background-image: url('../_img/export_hard03.png');
+}
+
+#subCon .exportAdvantage ul li.hard04 {
+  background-image: url('../_img/export_hard04.png');
+}
+
+#subCon .exportAdvantage ul li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+#subCon .exportAdvantage ul li .txtBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1.3em;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+#subCon .exportAdvantage ul li .txtBox h5 {
+  width: 100%;
+  margin-bottom: 0.8em;
+  word-break: keep-all;
+}
+
+#subCon .exportAdvantage ul li .txtBox p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.4;
+  word-break: keep-all;
+  color: #333;
+}
+
+#subCon .exportAdvantage ul li.advan {
+  background-color: #0014A7;
+  margin-right: 0;
+}
+
+#subCon .exportAdvantage ul li.advan:after {
+  display: none;
+}
+
+#subCon .exportAdvantage ul li.advan h5 {
+  color: #fff;
+}
+
+#subCon .exportAdvantage ul li.advan p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* subScrap */
+#subCon.subScrap .document .docuBtn li {
+  float: left;
+  width: calc((100% - 4em) / 4);
+}
+
+/* subGuide */
+#subCon.subGuide .guideBtn {
+  margin-bottom: 6.6em;
+}
+
+#subCon.subGuide .guideBtn li {
+  float: left;
+  width: calc((100% - 3.9em) / 4);
+  height: 5.2em;
+  margin-right: 1.3em;
+  border: 2px solid #f4f4f4;
+  background-color: #f4f4f4;
+  transition: all 0.3s;
+}
+
+#subCon.subGuide .guideBtn li:last-child {
+  margin-right: 0;
+}
+
+#subCon.subGuide .guideBtn li:hover {
+  border-color: #0014A7;
+  color: #0014A7;
+}
+
+#subCon.subGuide .guideBtn li.active {
+  border-color: #0014A7;
+  background-color: #0014A7;
+}
+
+#subCon.subGuide .guideBtn li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 4em;
+}
+
+#subCon.subGuide .guideBtn li.active a {
+  color: #fff;
+}
+
+#subCon.subGuide .guideCon article {
+  margin-bottom: 2.6em;
+}
+
+#subCon.subGuide .guideCon .guideDetail {
+  margin-bottom: 6.6em;
+}
+
+#subCon.subGuide .guideCon .guideDetail .list .listArea li {
+  display: block;
+  width: calc((100% - 6.5em) / 6);
+  height: auto;
+  margin-right: 1.3em;
+}
+
+#subCon.subGuide .guideCon .guideDetail .list .listArea li:last-child {
+  margin-right: 0;
+}
+
+#subCon.subGuide .guideCon .guideDetail .list .listArea li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.2);
+}
+
+#subCon.subGuide .guideCon .guideDetail .list .listArea li h6 {
+  position: relative;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0014A7;
+}
+
+#subCon.subGuide .guideCon .guideDetail .list .listArea li figure {
+  position: relative;
+  justify-items: center;
+  width: auto;
+  height: 6em;
+  margin-right: 0;
+  margin-bottom: 1.3em;
+  z-index: 2;
+}
+
+#subCon.subGuide .guideCon .guideDetail .list .listArea li figure img {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#subCon.subGuide .guideCon .guideDetail .list .listArea li .txtArea {
+  text-align: center;
+}
+
+#subCon.subGuide .guideCon .guideDetail .document .titArea {
+  text-align: right;
+}
+
+#subCon.subGuide .motorBtn {
+  margin-top: -4em;
+  margin-bottom: 5.2em;
+}
+
+#subCon.subGuide .motorBtn li {
+  position: relative;
+  float: left;
+  width: calc((100% - 1.3em) / 2);
+  height: 13.3em;
+  margin-right: 1.3em;
+  background: no-repeat center / cover;
+  background-color: #333;
+}
+
+#subCon.subGuide .motorBtn li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#subCon.subGuide .motorBtn li.domesticBtn {
+  background-image: url('../_img/btn_guide_domestic.png');
+}
+
+#subCon.subGuide .motorBtn li.foreignBtn {
+  margin-right: 0;
+  background-image: url('../_img/btn_guide_foreign.png');
+}
+
+#subCon.subGuide .motorBtn li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 10em;
+  color: #aaa;
+}
+
+#subCon.subGuide .motorBtn li a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #aaa;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+#subCon.subGuide .motorBtn li a:hover:after {
+  width: 90%;
+  height: 70%;
+  opacity: 1;
+}
+
+#subCon.subGuide .motorBtn li.active a {
+  color: #fff;
+}
+
+#subCon.subGuide .motorBtn li.active a:after {
+  width: 90%;
+  height: 70%;
+  border-color: #fff;
+  opacity: 1;
+}
+
+#subCon.subGuide .guideCon .guideKia .titArea,
+#subCon.subGuide .guideCon .guideSamsung .titArea {
+  text-align: right;
+}
+
+#subCon.subGuide .guideCon .motorCon table {
+  width: 100%;
+  text-align: center;
+}
+
+#subCon.subGuide .guideCon .motorCon table thead tr th,
+#subCon.subGuide .guideCon .motorCon table tbody {
+  border: 1px solid #ccc;
+}
+
+#subCon.subGuide .guideCon .motorCon table thead tr th {
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 0.5em 0;
+  background-color: #eee;
+  word-break: keep-all;
+}
+
+#subCon.subGuide .guideCon .motorCon table tbody td {
+  padding: 1.2em;
+  border: 1px solid #ccc;
+  font-size: 1.7rem;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+#subCon.subGuide .guideCon .motorCon table tbody td:first-child {
+  text-align: center;
+}
+
+#subCon.subGuide .guideCon .faqCon {
+  border-top: 2px solid #0014A7;
+}
+
+#subCon.subGuide .guideCon .faqCon li .qusetion a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.3em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#subCon.subGuide .guideCon .faqCon li .qusetion a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #333;
+  transition: all 0.6s;
+}
+
+#subCon.subGuide .guideCon .faqCon li .qusetion a:hover:after {
+  width: 100%;
+}
+
+#subCon.subGuide .guideCon .faqCon li .qusetion a h5 {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.6s;
+}
+
+#subCon.subGuide .guideCon .faqCon li .qusetion a:hover h5 {
+  font-weight: 600;
+  color: #333;
+}
+
+#subCon.subGuide .guideCon .faqCon li .qusetion a h5 span {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  margin-right: 0.8em;
+  background-color: #0014A7;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 2em;
+  color: #fff;
+}
+
+#subCon.subGuide .guideCon .faqCon li .answer {
+  padding: 1.25em;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background: #eee;
+}
+
+#subCon.subGuide .guideCon .faqCon li.active .qusetion a:after {
+  width: 100%;
+}
+
+#subCon.subGuide .guideCon .faqCon li.active .qusetion a h5 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* subCommunity */
+#subCon.subCommunity .commuBtn {
+  margin-bottom: 2.6em;
+}
+
+#subCon.subCommunity .commuBtn li {
+  float: left;
+  width: calc((100% - 1.3em) / 2);
+  height: 5.2em;
+  margin-right: 1.3em;
+  border: 2px solid #f4f4f4;
+  background-color: #f4f4f4;
+  transition: all 0.3s;
+}
+
+#subCon.subCommunity .commuBtn li:last-child {
+  margin-right: 0;
+}
+
+#subCon.subCommunity .commuBtn li:hover {
+  border-color: #0014A7;
+  color: #0014A7;
+}
+
+#subCon.subCommunity .commuBtn li.active {
+  border-color: #0014A7;
+  background-color: #0014A7;
+}
+
+#subCon.subCommunity .commuBtn li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 4em;
+}
+
+#subCon.subCommunity .commuBtn li.active a {
+  color: #fff;
+}
+
+#subCon.subCommunity .commuCon table {
+  width: 100%;
+  border-top: 2px solid #0014A7;
+}
+
+#subCon.subCommunity .commuCon table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+#subCon.subCommunity .commuCon table tr td {
+  padding: 1.3em;
+  text-align: center;
+}
+
+#subCon.subCommunity .commuCon table thead {
+  background: #eee;
+}
+
+#subCon.subCommunity .commuCon table thead tr td {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+}
+
+#subCon.subCommunity .commuCon table tbody tr td {
+  font-size: 1.7rem;
+}
+
+#subCon.subCommunity .commuCon table tbody tr .noticeBtn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: color 0.3s;
+}
+
+#subCon.subCommunity .commuCon table tbody tr .noticeBtn a:hover {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #333;
+}
+
+#subCon.subCommunity .commuReview ul {
+  border-top: 2px solid #0014A7;
+}
+
+#subCon.subCommunity .commuReview ul li {
+  height: 16em;
+  padding: 1.3em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#subCon.subCommunity .commuReview ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#subCon.subCommunity .commuReview ul li a figure {
+  position: relative;
+  float: left;
+  width: 20em;
+  height: 13.3em;
+  border: 1px solid #aaa;
+  overflow: hidden;
+}
+
+#subCon.subCommunity .commuReview ul li a figure::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+#subCon.subCommunity .commuReview ul li a figure:after {
+  content: 'VIEW';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 6.6em;
+  height: 2.5em;
+  border: 2px solid #f4f4f4;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 2.5em;
+  color: #f4f4f4;
+  opacity: 0;
+}
+
+#subCon.subCommunity .commuReview ul li a:hover figure:before,
+#subCon.subCommunity .commuReview ul li a:hover figure:after {
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+#subCon.subCommunity .commuReview ul li a figure img {
+  width: 100%;
+}
+
+#subCon.subCommunity .commuReview ul li a .txtArea {
+  float: left;
+  width: calc(100% - 22.6em);
+  height: 12.6em;
+  padding-left: 1.3em;
+}
+
+#subCon.subCommunity .commuReview ul li a .txtArea h5 {
+  margin-bottom: 0.8em;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#subCon.subCommunity .commuReview ul li a .txtArea p {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  word-break: keep-all;
+  word-wrap: break-word;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+#subCon.subCommunity .paging_wrap {
+	width: 60%;
+	margin: 2.6em auto;
+}
+
+#subCon.subCommunity .paging_wrap ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#subCon.subCommunity .paging_wrap ul li {
+	width: 2em;
+	height: 2em;
+	margin-right: 0.8em;
+	border: 1px solid #3276D8;
+	text-align: center;
+	line-height: 2em;
+	color: #3276D8;
+}
+
+#subCon.subCommunity .paging_wrap ul li.act {
+	background-color: #3276d8;
+	color: #fff;
+}
+
+#subCon.subCommunity .paging_wrap ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#subCon.subCommunity .paging_wrap ul li.arrow {
+	background-color: #0014A7;
+	border-color: #0014A7;
+	font-weight: 500;
+	color: #fff;
+}
+
+#subCon.subCommunity .paging_wrap ul li.arrow a span {
+  line-height: 1.6em;
+  font-size: 1.8rem;
+}

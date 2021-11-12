@@ -1,0 +1,1417 @@
+@media screen and (min-width: 1025px) and (max-width: 1399px) {
+
+  /* layout */
+  .inner {
+    width: 95%;
+  }
+
+  /* counForm */
+  .counForm {
+    width: 100%;
+  }
+
+  #subVisual .counForm .inner {
+    width: 100%;
+  }
+
+  #subVisual .counForm {
+    width: 100%;
+  }
+
+  .counForm .counTit {
+    width: 20%;
+  }
+
+  .counForm .counTit h4 {
+    font-size: 2.2rem;
+  }
+
+  .counForm .counBtn {
+    width: 9em;
+  }
+
+  .counForm .counDetail {
+    width: 38.5%;
+  }
+
+  .counForm .counCheck {
+    width: 20%
+  }
+
+  .counForm .counDetail div {
+    margin-bottom: 0.6em;
+  }
+
+  .counForm .counDetail label {
+    width: 15%;
+  }
+
+  .counForm .counDetail input {
+    width: 84%;
+  }
+
+  /* ourWork */
+  #ourWork .workIcon .workDetail {
+    top: 6em;
+  }
+
+  /* recommendation */
+  #recommendation .recoList li .txtArea table th {
+    font-size: 1.2rem;
+  }
+
+  /* counseling */
+  #counseling .titArea {
+    width: calc((60% - 2em) / 2);
+  }
+
+  #counseling .sellList {
+    width: calc(45% - 1em);
+  }
+
+  #counseling .sellList .roofSell ul li .sellState {
+    width: 20%;
+  }
+
+  #counseling .sellList .roofSell ul li .sellTit {
+    width: 75%;
+  }
+
+  /* procedure */
+  #procedure .diagram ul li {
+    width: calc((100% - 2.6em) / 3);
+  }
+
+  #procedure .diagram ul li:nth-child(1),
+  #procedure .diagram ul li:nth-child(2),
+  #procedure .diagram ul li:nth-child(3) {
+    margin-bottom: 1.3em;
+  }
+
+  #procedure .diagram ul li:nth-child(3) {
+    margin-right: 0;
+  }
+
+  /* guide */
+  #guide:after {
+    font-size: 12rem;
+  }
+
+  /* subCon */
+  #subCon .list .listArea li {
+    width: calc((100% - 1.3em) / 2);
+  }
+
+  #subCon .list .listArea li:nth-child(3),
+  #subCon .list .listArea li:nth-child(6) {
+    margin-right: 1.3em;
+  }
+
+  #subCon .list .listArea li:nth-child(4) {
+    margin-bottom: 1.3em;
+  }
+
+  #subCon .list .listArea li:nth-child(even) {
+    margin-right: 0;
+  }
+
+  #subCon .document .docuCon table tbody td ul li {
+    word-break: keep-all;
+  }
+
+  #subCon .document .docuCon table tbody td ul li br {
+    display: none;
+  }
+
+  /* subGuide */
+  #subCon.subGuide .guideCon .guideDetail .list .listArea li {
+    width: calc((100% - 2.6em) / 3);
+  }
+
+  #subCon.subGuide .guideCon .guideDetail .list .listArea li:nth-child(3) {
+    margin-right: 0;
+  }
+
+  /* subExport */
+  #subCon .whatExport .exportDetail {
+    height: 22em;
+  }
+
+  #subCon .whatExport .exportDetail p {
+    width: 40%;
+  }
+
+  #subCon .whatExport .exportDetail p br {
+    display: none;
+  }
+
+  #subCon .whatExport .exportDetail .bg .container {
+    top: 0;
+    right: 30%;
+    width: 18em;
+  }
+
+  #subCon .whatExport .exportDetail .bg .ship {
+    width: 35em;
+  }
+
+  #subCon .exportAdvantage ul li .txtBox br {
+    display: none;
+  }
+
+  #subCon .exportAdvantage ul li .txtBox h5 {
+    font-size: 2rem;
+  }
+
+  #subCon .exportAdvantage ul li .txtBox p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* layout */
+  html {
+    font-size: 9px;
+    -webkit-text-size-adjust: scale(0.9);
+  }
+
+  .inner {
+    width: 90%;
+  }
+
+  /* header */
+  header .logo {
+    float: none;
+    margin-bottom: 1.3em;
+  }
+
+  header .logo a img {
+    margin: 0 auto;
+  }
+
+  header .searchArea {
+    top: 9.8em;
+  }
+
+  /* counForm */
+  .counForm {
+    width: 95%;
+  }
+
+  .counForm .inner {
+    width: 100%;
+  }
+
+  #subVisual .counForm .inner {
+    width: 100%;
+  }
+
+  #subVisual .counForm {
+    width: 100%;
+  }
+
+  .counForm .counTit {
+    display: none;
+  }
+
+  .counForm .counBtn {
+    width: 20%;
+    margin: 0 1.3em 0 0;
+    padding-right: 1.3em;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .counForm .counDetail {
+    width: calc((63% - 5.2em));
+  }
+
+  .counForm .counDetail label {
+    width: 13%;
+  }
+
+  .counForm .counDetail input {
+    width: 86%;
+  }
+
+  .counForm .counCheck {
+    width: 21%;
+  }
+
+  /* mainCon */
+  #mainCon {
+    height: 63em;
+  }
+
+  #mainCon .mainVisual .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 24em);
+    background: no-repeat center / cover;
+    z-index: 2;
+  }
+
+  /* ourWork */
+  #ourWork .workIcon {
+    margin-top: 4em;
+  }
+
+  #ourWork .workIcon .workDetail {
+    top: 10em;
+  }
+
+  /* recommendation */
+  #recommendation .recoList li {
+    width: calc((100% - 1.3em) / 2);
+    margin-right: 1.3em;
+  }
+
+  #recommendation .recoList li:nth-child(1),
+  #recommendation .recoList li:nth-child(2) {
+    margin-bottom: 1.3em;
+  }
+
+  #recommendation .recoList li:nth-child(even) {
+    margin-right: 0;
+  }
+
+  /* counseling */
+  #counseling .titArea {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #counseling .count {
+    float: left;
+    width: calc(40% - 1em);
+  }
+
+  #counseling .sellList {
+    width: calc(60% - 1em);
+    height: 20em;
+    margin-right: 0;
+    padding: 1.3em;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+
+  #counseling .sellList .roofSell ul li {
+    height: 2.6em;
+  }
+
+  #counseling .sellList .roofSell ul li .sellState {
+    width: 20%;
+  }
+
+  /* procedure */
+  #procedure .diagram ul li {
+    width: calc((100% - 3.9em) / 3);
+  }
+
+  #procedure .diagram ul li:nth-child(1),
+  #procedure .diagram ul li:nth-child(2),
+  #procedure .diagram ul li:nth-child(3) {
+    margin-bottom: 1.3em;
+  }
+
+  /* review */
+  #review .swiper-container {
+    width: 85%;
+  }
+
+  #review .swiper-wrapper .swiper-slide {
+    width: 49.9%;
+    height: auto;
+  }
+
+  #review .swiper-wrapper .swiper-slide a {
+    display: block;
+  }
+
+  #review .swiper-wrapper .swiper-slide a figure {
+    width: 100%;
+    height: 10em;
+    overflow: hidden;
+  }
+
+  #review .swiper-wrapper .swiper-slide a figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  #review .swiper-wrapper .swiper-slide a .txtArea {
+    width: 100%;
+    height: 16em;
+  }
+
+  /* subVisual */
+  #subVisual .txtArea {
+    top: 30%;
+  }
+
+  #subVisual .txtArea h2 {
+    margin-bottom: 0.5em;
+  }
+
+  /* subCon */
+  #subCon .list .listArea li {
+    width: calc((100% - 1.3em) / 2);
+  }
+
+  #subCon .list .listArea li:nth-child(3),
+  #subCon .list .listArea li:nth-child(6) {
+    margin-right: 1.3em;
+  }
+
+  #subCon .list .listArea li:nth-child(4) {
+    margin-bottom: 1.3em;
+  }
+
+  #subCon .list .listArea li:nth-child(even) {
+    margin-right: 0;
+  }
+
+  #subCon .list .listArea li .txtArea p {
+    font-size: 1.3rem;
+  }
+
+  #subCon .document .docuCon table tbody td ul li {
+    font-size: 1.2rem;
+    word-break: keep-all;
+  }
+
+  #subCon .document .docuCon table tbody td ul li br {
+    display: none;
+  }
+
+  /* subGuide */
+  #subCon.subGuide .guideCon .guideDetail .list .listArea li {
+    width: calc((100% - 2.6em) / 3);
+  }
+
+  #subCon.subGuide .guideCon .guideDetail .list .listArea li:nth-child(3) {
+    margin-right: 0;
+  }
+
+  /* subExport */
+  #subCon .whatExport .exportDetail {
+    height: 40em;
+  }
+
+  #subCon .whatExport .exportDetail .bg .container {
+    top: 35%;
+    left: 15%;
+  }
+
+  #subCon .whatExport .exportDetail .bg .ship {
+    top: 50%;
+  }
+
+  #subCon .exportAdvantage ul li {
+    width: calc((100% - 3.9em) / 4);
+    height: 12em;
+  }
+
+  #subCon .exportAdvantage ul li .txtBox br {
+    display: none;
+  }
+
+  #subCon .exportAdvantage ul li .txtBox p {
+    font-size: 1.5rem;
+  }
+
+  #subCon .exportAdvantage ul li.hard04 {
+    margin-right: 0;
+  }
+
+  #subCon .exportAdvantage ul li.advan {
+    width: 100%;
+    margin-top: 1.3rem;
+  }
+
+  /* subCommunity */
+  #subCon.subCommunity .commuCon table thead tr td,
+  #subCon.subCommunity .commuCon table tbody tr td {
+    font-size: 1.4rem;
+  }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+
+  /* layout */
+  html {
+    font-size: 9px;
+    -webkit-text-size-adjust: scale(0.9);
+  }
+
+  .inner {
+    width: 90%;
+  }
+
+  /* counForm */
+  .counForm {
+    width: 95%;
+  }
+
+  .counForm .inner {
+    width: 100%;
+  }
+
+  .counForm .counTit {
+    display: none;
+  }
+
+  .counForm .counBtn {
+    width: 20%;
+    margin: 0 1.3em 0 0;
+    padding-right: 1.3em;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .counForm .counBtn .btn {
+    font-size: 1.3rem;
+  }
+
+  .counForm .counDetail {
+    width: calc(51% - 1.3em);
+  }
+
+  .counForm .counDetail label {
+    width: 17%;
+  }
+
+  .counForm .counDetail input {
+    width: 81%;
+  }
+
+  .counForm .counCheck {
+    width: 25%;
+  }
+
+  /* header */
+  header .logo {
+    float: none;
+    margin-bottom: 1.3em;
+  }
+
+  header .logo a img {
+    margin: 0 auto;
+  }
+
+  header .searchArea {
+    top: 9.8em;
+  }
+
+  header nav ul li a {
+    font-size: 1.6rem;
+  }
+
+  /* mainCon */
+  #mainCon {
+    height: 75em;
+  }
+
+  #mainCon .mainVisual .swiper-slide {
+    height: 68em;
+  }
+
+  /* ourWork */
+  #ourWork .workIcon {
+    margin-top: 3em;
+  }
+
+  #ourWork .workIcon .workDetail {
+    top: 10em;
+  }
+
+  #ourWork .workIcon h5 {
+    font-size: 1.4rem;
+  }
+
+  #ourWork .workIcon h5:before {
+    width: 4em;
+    left: -5em;
+  }
+
+  #ourWork .workIcon .workDetail div a .iconArea {
+    width: 6em;
+    height: 6em;
+  }
+
+  /* recommendation */
+  #recommendation .recoList li {
+    width: calc((100% - 1.3em) / 2);
+    margin-right: 1.3em;
+  }
+
+  #recommendation .recoList li:nth-child(1),
+  #recommendation .recoList li:nth-child(2) {
+    margin-bottom: 1.3em;
+  }
+
+  #recommendation .recoList li:nth-child(even) {
+    margin-right: 0;
+  }
+
+  #recommendation .recoList li .txtArea p {
+    font-size: 1.3rem;
+  }
+
+  /* counseling */
+  #counseling .titArea {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #counseling .count {
+    float: left;
+    width: calc(40% - 1em);
+  }
+
+  #counseling .sellList {
+    width: calc(60% - 1em);
+    height: 20em;
+    margin-right: 0;
+    padding: 1.3em;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+
+  #counseling .sellList .roofSell ul li {
+    height: 2.6em;
+  }
+
+  #counseling .sellList .roofSell ul li .sellState {
+    width: 20%;
+  }
+
+  #counseling .sellList .roofSell ul li .sellState span {
+    font-size: 1.2rem;
+  }
+
+  /* procedure */
+  #procedure .diagram ul li {
+    width: calc((100% - 3.9em) / 3);
+  }
+
+  #procedure .diagram ul li:nth-child(1),
+  #procedure .diagram ul li:nth-child(2),
+  #procedure .diagram ul li:nth-child(3) {
+    margin-bottom: 1.3em;
+  }
+
+  #procedure .diagram ul li .txtArea h5 {
+    font-size: 1.8rem;
+  }
+
+  #procedure .diagram ul li .txtArea p {
+    font-size: 1.2rem;
+  }
+
+  /* guide */
+  #guide {
+    height: 42em;
+  }
+
+  #guide .guideDetail {
+    margin-top: 10em;
+  }
+
+  /* review */
+  #review .swiper-container {
+    width: 85%;
+  }
+
+  #review .swiper-wrapper .swiper-slide {
+    width: 49.9%;
+    height: auto;
+  }
+
+  #review .swiper-wrapper .swiper-slide a {
+    display: block;
+  }
+
+  #review .swiper-wrapper .swiper-slide a figure {
+    width: 100%;
+    height: 15em;
+    overflow: hidden;
+  }
+
+  #review .swiper-wrapper .swiper-slide a figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  #review .swiper-wrapper .swiper-slide a .txtArea {
+    width: 100%;
+    height: 16em;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  /* section */
+  section {
+    margin-bottom: 6em;
+  }
+
+  section h4 {
+    margin-bottom: 1em;
+  }
+
+  /* layout */
+  html {
+    font-size: 8px;
+    -webkit-text-size-adjust: scale(0.8);
+  }
+
+  .inner {
+    width: 95%;
+  }
+
+  /* header */
+  header .mobMenu {
+    float: left;
+    display: block;
+    padding-top: 0.5em;
+  }
+
+  header .mobMenu a span {
+    font-size: 3.2rem;
+    color: #fff;
+  }
+
+  header .logo {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2.3em;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+  }
+
+  header nav.slide-right {
+    left: 0;
+  }
+
+  header nav ul {
+    float: none;
+    width: 100%;
+  }
+
+  header nav ul li {
+    float: none;
+    width: 100%;
+    padding: 0.6em 1.3em;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  header nav ul li.mobNavClose {
+    display: block;
+    padding: 1.3em;
+    border-bottom: 0;
+  }
+
+  header nav ul li.mobNavClose a {
+    float: right;
+    width: 1em;
+    height: 1em;
+    font-size: 3rem;
+    color: #555;
+  }
+
+  header nav ul li a {
+    font-size: 2.2rem;
+    color: #555;
+  }
+
+  header nav ul li a:after {
+    display: none;
+  }
+
+  header nav ul li a:focus {
+    color: #0014a7;
+  }
+
+  header .searchArea .closeBtn {
+    top: 3%;
+    right: 1%;
+  }
+
+  header.move-down .mobMenu a span {
+    color: #333;
+  }
+
+  /* counForm */
+  .counForm {
+    position: relative;
+    border: 0;
+    z-index: 3;
+  }
+
+  #mainCon .counForm {
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .counForm .inner {
+    height: auto;
+    margin-top: -10em;
+    background-color: #fff;
+  }
+
+  .counForm .counTit {
+    float: none;
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+    border-right: 0;
+    margin-bottom: 1.3em;
+  }
+
+  .counForm .counTit h4 {
+    margin-bottom: 0.3em;
+    font-size: 2.6rem;
+  }
+
+  .counForm .counTit p br {
+    display: none;
+  }
+
+  .counForm .counBtn {
+    float: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+
+  .counForm .counBtn .btn {
+    width: 25%;
+    height: 4em;
+    margin-right: -1px;
+    padding: 0;
+    border: 1px solid #0014a7;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    word-break: keep-all;
+  }
+
+  .counForm .counDetail {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.3em;
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .counForm .counDetail div {
+    margin-bottom: 1.3em;
+  }
+
+  .counForm .counDetail label {
+    width: 14%;
+    font-size: 1.8rem;
+  }
+
+  .counForm .counDetail input {
+    width: 85%;
+    padding: 0.8em;
+    font-size: 1.5rem;
+  }
+
+  .counForm .counCheck {
+    position: static;
+    width: 100%;
+  }
+
+  .counForm .counCheck .checks label {
+    font-size: 1.7rem;
+    vertical-align: middle;
+  }
+
+  .counForm .counCheck .btn {
+    height: 3em;
+    line-height: 2.9em;
+  }
+
+  /* mainCon */
+  #mainCon {
+    height: auto;
+  }
+
+  #mainCon .mainVisual {
+    margin-bottom: 6em;
+  }
+
+  #mainCon .mainVisual .swiper-slide {
+    height: 100vh;
+  }
+
+  #mainCon .mainVisual .swiper-slide .visualTit {
+    top: 35%;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+  }
+
+  #mainCon .mainVisual .swiper-slide .visualTit h2 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+
+  #mainCon .mainVisual .swiper-slide .visualTit h3 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+    word-break: keep-all;
+  }
+
+  #mainCon .mainVisual .swiper-slide .visualTit h3 br {
+    display: none;
+  }
+
+  /* ourWork */
+  #ourWork .workIcon h5 {
+    margin-bottom: 0;
+    text-align: right;
+    word-break: keep-all;
+  }
+
+  #ourWork .workIcon h5 br {
+    display: none;
+  }
+
+  #ourWork .workIcon h5:before {
+    display: none;
+  }
+
+  #ourWork .workIcon .workDetail {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #ourWork .workIcon .workDetail>div {
+    margin-bottom: 1.3em;
+  }
+
+  #ourWork .workIcon .workDetail div a .iconArea {
+    width: 6em;
+    height: 6em;
+  }
+
+  #ourWork .workIcon .workDetail div a p {
+    margin-top: 0.5em;
+  }
+
+  /* recommendation */
+  #recommendation .recoList li {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.3em;
+  }
+
+  #recommendation .recoList li:last-child {
+    margin-bottom: 0;
+  }
+
+  #recommendation .recoList li .txtArea p {
+    font-size: 1.5rem;
+  }
+
+  /* counseling */
+  #counseling {
+    padding-bottom: 6em;
+  }
+
+  #counseling .titArea {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #counseling article {
+    float: none;
+  }
+
+  #counseling .count {
+    float: none;
+    width: 100%;
+  }
+
+  #counseling .sellList {
+    width: 100%;
+    height: 20.5em;
+    margin-top: 1.3em;
+  }
+
+  #counseling .sellList h5 {
+    margin-bottom: 0.5em;
+  }
+
+  #counseling .sellList .roofSell ul li {
+    height: 2.8em;
+  }
+
+  #counseling .sellList .roofSell ul li .sellState {
+    width: 20%;
+  }
+
+  #counseling .sellList .roofSell ul li .sellTit {
+    width: 75%;
+  }
+
+  /* procedure */
+  #procedure {
+    padding: 6em 0;
+  }
+
+  #procedure .diagram ul li {
+    width: calc((100% - 2.6em) / 2);
+    padding: 1.3em 0.6em;
+    margin-bottom: 1.3em;
+  }
+
+  #procedure .diagram ul li:nth-child(even) {
+    margin-right: 0;
+  }
+
+  #procedure .diagram ul li:nth-child(5),
+  #procedure .diagram ul li:nth-child(6) {
+    margin-bottom: 0;
+  }
+
+  #procedure .diagram ul li .txtArea h5 {
+    margin-bottom: 0.26em;
+    font-size: 1.6rem;
+  }
+
+  #procedure .diagram ul li .txtArea p {
+    font-size: 1.2rem;
+  }
+
+  /* guide */
+  #guide {
+    height: 53.5em;
+  }
+
+  #guide:after {
+    font-size: 8rem;
+  }
+
+  #guide .guideDetail {
+    margin-top: 9em;
+  }
+
+  #guide .guideDetail ul .guiSale {
+    width: 45%;
+  }
+
+  #guide .guideDetail ul .guiPurchase {
+    left: calc(45% + 1.3em);
+    width: calc(55% - 1.3em);
+    height: 14em;
+  }
+
+  #guide .guideDetail ul .guiAssurance {
+    left: calc(45% + 1.3em);
+    width: calc(55% - 1.3em);
+    height: calc(16em - 1.3em);
+  }
+
+  #guide .guideDetail ul .guiFaq {
+    top: 31.2em;
+    left: 0;
+    width: 100%;
+  }
+
+  /* review */
+  #review .swiper-container {
+    width: 80%;
+  }
+
+  #review .swiper-wrapper .swiper-slide {
+    width: 49%;
+    height: auto;
+  }
+
+  #review .swiper-wrapper .swiper-slide a {
+    display: block;
+  }
+
+  #review .swiper-wrapper .swiper-slide a figure {
+    width: 100%;
+    height: 15em;
+    overflow: hidden;
+  }
+
+  #review .swiper-wrapper .swiper-slide a figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  #review .swiper-wrapper .swiper-slide a .txtArea {
+    width: 100%;
+    height: 16em;
+  }
+
+  #review .swiper-button-next:after,
+  #review .swiper-button-prev:after {
+    font-size: 4rem;
+  }
+
+  /* subVisual */
+  #subVisual {
+    margin-bottom: 42em;
+  }
+
+  #subVisual .txtArea {
+    top: 45%;
+  }
+
+  #subVisual .txtArea h2 {
+    margin-bottom: 0.5em;
+  }
+
+  #subVisual .counForm {
+    bottom: -90%;
+  }
+
+  #subVisual .counForm .inner {
+    width: 100%;
+  }
+
+  /* subCon */
+  #subCon article {
+    margin-bottom: 8em;
+  }
+
+  #subCon .list .listArea li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.3em;
+  }
+
+  #subCon .document .docuBtn {
+    display: none;
+  }
+
+  #subCon .document .mobDocuBtn {
+    display: block;
+    margin-bottom: 2.6em;
+  }
+
+  #subCon .document .mobDocuBtn li {
+    float: left;
+    width: calc((100% - 1.3em) / 2);
+    height: 5.2em;
+    margin-right: 1.3em;
+    margin-bottom: 1.3em;
+    border: 2px solid #f4f4f4;
+    background-color: #f4f4f4;
+    transition: all 0.3s;
+  }
+
+  #subCon .document .mobDocuBtn li:nth-child(even) {
+    margin-right: 0;
+  }
+
+  #subCon.subSale .document .mobDocuBtn li:last-child,
+  #subCon.subPurchase .document .mobDocuBtn li:last-child {
+    margin-bottom: 0;
+  }
+
+  #subCon.subScrap .document .mobDocuBtn li:nth-child(3),
+  #subCon.subScrap .document .mobDocuBtn li:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  #subCon .document .mobDocuBtn li:hover {
+    border-color: #0014A7;
+    color: #0014A7;
+  }
+
+  #subCon .document .mobDocuBtn li.active {
+    border-color: #0014A7;
+    background-color: #0014A7;
+  }
+
+  #subCon .document .mobDocuBtn li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 4.4em;
+  }
+
+  #subCon .document .mobDocuBtn li.active a {
+    color: #fff;
+  }
+
+  #subCon .document .docuCon {
+    display: none;
+  }
+
+  #subCon .document .mobDocuCon {
+    display: block;
+  }
+
+  #subCon .document .mobDocuCon table {
+    width: 100%;
+    text-align: center;
+  }
+
+  #subCon .document .mobDocuCon table thead tr th,
+  #subCon .document .mobDocuCon table tbody {
+    border: 1px solid #ccc;
+  }
+
+  #subCon .document .mobDocuCon table thead tr th {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 0.5em;
+    background-color: #eee;
+  }
+
+  #subCon .document .mobDocuCon table tbody td {
+    padding: 0.5em;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    font-size: 1.7rem;
+  }
+
+  #subCon .document .mobDocuCon table tbody td ul li {
+    font-size: 1.7rem;
+    line-height: 1.6;
+  }
+
+  /* subExport */
+  #subCon .whatExport .exportDetail {
+    height: 41em;
+  }
+
+  #subCon .whatExport .exportDetail p {
+    margin-bottom: 1.3em;
+  }
+
+  #subCon .whatExport .exportDetail p br {
+    display: none;
+    word-break: keep-all;
+    line-height: 1.6;
+  }
+
+  #subCon .whatExport .exportDetail .bg {
+    position: relative;
+    height: 30em;
+  }
+
+  #subCon .whatExport .exportDetail .bg .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+  }
+
+  #subCon .whatExport .exportDetail .bg .ship {
+    position: absolute;
+    width: 95%;
+  }
+
+  #subCon .exportAdvantage ul li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.3em;
+  }
+
+  #subCon .exportAdvantage ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* subGuide */
+  #subCon.subGuide .guideBtn li {
+    width: calc((100% - 1.3em) / 2);
+    margin-bottom: 1.3em;
+  }
+
+  #subCon.subGuide .guideBtn li:nth-child(3),
+  #subCon.subGuide .guideBtn li:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  #subCon.subGuide .guideBtn li:nth-child(even) {
+    margin-right: 0;
+  }
+
+  #subCon.subGuide .guideCon .guideDetail .list .listArea li {
+    width: calc((100% - 1.3em) / 2);
+  }
+
+  #subCon.subGuide .guideCon .guideDetail .list .listArea li:nth-child(5),
+  #subCon.subGuide .guideCon .guideDetail .list .listArea li:nth-child(6) {
+    margin-bottom: 0;
+  }
+
+  #subCon.subGuide .guideCon .guideDetail .list .listArea li:nth-child(even) {
+    margin-right: 0;
+  }
+
+  #subCon.subGuide .guideCon .guideDetail .document .mobDocuCon table {
+    margin-bottom: 1.3em;
+  }
+
+  #subCon.subGuide .guideCon .guideDetail .document .mobDocuCon table:last-child {
+    margin-bottom: 0;
+  }
+
+  #subCon.subGuide .motorBtn li {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.3em;
+  }
+
+  #subCon.subGuide .motorBtn li:last-child {
+    margin-bottom: 0;
+  }
+
+  #subCon.subGuide .guideCon .motorCon table tbody td {
+    padding: 0.6em;
+  }
+
+  /* subCommunity */
+  #subCon.subCommunity .commuCon table thead tr td,
+  #subCon.subCommunity .commuCon table tbody tr td {
+    padding: 0.8em;
+    font-size: 1.5rem;
+  }
+
+  #subCon.subCommunity .commuReview ul li {
+    height: auto;
+  }
+
+  #subCon.subCommunity .commuReview ul li a figure {
+    width: 40%;
+    height: auto;
+  }
+
+  #subCon.subCommunity .commuReview ul li a .txtArea {
+    width: 50%;
+    height: auto;
+  }
+
+  #subCon.subCommunity .commuReview ul li a .txtArea p {
+    -webkit-line-clamp: 3;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  /* subExport */
+  #subCon .whatExport .exportDetail {
+    height: 36em;
+  }
+
+  #subCon .whatExport .exportDetail .bg {
+    height: 24em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* subExport */
+  #subCon .whatExport .exportDetail {
+    height: 34em;
+  }
+
+  #subCon .whatExport .exportDetail .bg {
+    height: 19em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+  /* layout */
+  html {
+    font-size: 7px;
+    -webkit-text-size-adjust: scale(0.7);
+  }
+
+  /* counForm */
+  .counForm .counDetail label {
+    width: 15%;
+  }
+
+  .counForm .counDetail input {
+    width: 84%;
+  }
+
+  /* ourWork */
+  #ourWork .workIcon .workDetail div a .iconArea {
+    width: 5em;
+    height: 5em;
+  }
+
+  /* procedure */
+  #procedure .diagram ul li {
+    float: none;
+    width: 100%;
+  }
+
+  #procedure .diagram ul li:nth-child(5) {
+    margin-bottom: 1.3em;
+  }
+
+  /* subCon */
+  #subCon h5 {
+    font-size: 1.6rem;
+  }
+
+  #subCon .list .listArea li .txtArea p br {
+    display: none;
+  }
+
+  /* subExport */
+  #subCon .whatExport .exportDetail {
+    height: 32em;
+  }
+
+  #subCon .whatExport .exportDetail .bg {
+    height: 16em;
+  }
+
+  /* subGuide */
+  #subCon.subGuide .guideCon .guideDetail .list .listArea li {
+    height: 19em;
+  }
+
+  #subCon.subCommunity .commuCon table thead tr td,
+  #subCon.subCommunity .commuCon table tbody tr td {
+    font-size: 1.3rem;
+  }
+
+}
