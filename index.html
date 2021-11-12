@@ -1,725 +1,884 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- title -->
+    <title>365셀카</title>
 
-  <!-- title -->
-  <title>365셀카</title>
+    <!-- reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
 
-  <!-- reset -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- font -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="./_css/common.css" />
+    <link rel="stylesheet" href="./_css/main.css" />
+    <link rel="stylesheet" href="./_css/reactive.css" />
 
-  <!-- style -->
-  <link rel="stylesheet" href="./_css/common.css" />
-  <link rel="stylesheet" href="./_css/main.css" />
-  <link rel="stylesheet" href="./_css/reactive.css" />
+    <!-- *jsLibrary -->
+    <!-- jQuery -->
+    <script src="./_js/jquery-3.5.1.min.js"></script>
+    <script src="./_js/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- lodash -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
+      integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- scrollMagic -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+      integrity="sha512-nSomje7hTV0g6A5X/lEZq8koYb5XZtrWD7GU2+aIJD35CePx89oxSM+S7k3hqNSpHajFbtmrjavZFxSEfl6pQA=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"
+      integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- countup -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="./_js/jquery.counterup.min.js"></script>
+    <!-- vticker -->
+    <script src="./_js/jquery.vticker.min.js"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- script -->
+    <script defer src="./_js/common.js"></script>
+    <script defer src="./_js/main.js"></script>
+  </head>
 
-  <!-- *jsLibrary -->
-  <!-- jQuery -->
-  <script src="./_js/jquery-3.5.1.min.js"></script>
-  <script src="./_js/jquery-ui.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <!-- lodash -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
-    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
-    crossorigin="anonymous"></script>
-  <!-- gsap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
-    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
-    integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
-    crossorigin="anonymous"></script>
-  <!-- scrollMagic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
-    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
-    crossorigin="anonymous"></script>
-  <!-- swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- countup -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-  <script src="./_js/jquery.counterup.min.js"></script>
-  <!-- vticker -->
-  <script src="./_js/jquery.vticker.min.js"></script>
-  <!-- aos -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- script -->
-  <script defer src="./_js/common.js"></script>
-  <script defer src="./_js/main.js"></script>
-</head>
-
-<body>
-  <div id="wrap">
-    <header>
-      <div class="inner clearfix">
-        <div class="mobMenu">
-          <a href="javascript:void(0);">
-            <span class="material-icons">
-              menu
-            </span>
-          </a>
-        </div>
-        <h1 class="logo">
-          <a href="./index.html">
-            <img src="./_img/logo02_w.png" alt="365셀카">
-          </a>
-        </h1>
-        <nav>
-          <ul class="gnb clearfix">
-            <li class="mobNavClose">
-              <a href="javascript:void(0);">
-                <span class="material-icons">close</span>
-              </a>
-            </li>
-            <li><a href="./sale/sale.html">내차판매</a></li>
-            <li><a href="./purchase/purchase.html">내차구매</a></li>
-            <li><a href="./export/export.html">중고차수출</a></li>
-            <li><a href="./scrap/scrap.html">폐차서비스</a></li>
-            <li><a href="./guide/sale.html">매매가이드</a></li>
-            <li><a href="./community/notice.html">커뮤니티</a></li>
-          </ul>
-        </nav>
-        <button class="searchBtn">
-          <span class="material-icons">search</span>
-        </button>
-        <div class="searchArea">
-          <div class="searchDetail">
-            <div class="searchIn clearfix">
-              <input type="text" placeholder="검색어를 입력해주세요">
-              <div class="btnArea">
-                <button class="btn btn--white--reverse">검색</button>
-              </div>
-            </div>
-            <ul class="searchRecom clearfix">
-              <li><a href="./community/review.html">#매매후기</a></li>
-              <li><a href="./guide/sale.html">#제조사별 보증기간</a></li>
-              <li><a href="./guide/faq.html">#자주묻는질문</a></li>
-            </ul>
-          </div>
-          <button class="closeBtn">
-            <span class="material-icons">close</span>
-          </button>
-        </div>
-      </div>
-    </header>
-    <!-- // header -->
-
-    <section id="mainCon" class="scroll-spy">
-      <article class="mainVisual">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide visual01">
-              <div class="visualTit visualTit01">
-                <h2>365셀카의 신속함</h2>
-                <h3>
-                  365셀카는 언제 어디서든 고객님이 원하는 장소로 방문드리며, <br>
-                  방문 후 차량대금 입금까지 3시간 이내로 이뤄집니다.
-                </h3>
-              </div>
-            </div>
-            <div class="swiper-slide visual02">
-              <div class="visualTit visualTit02">
-                <h2>간편한 거래 진행</h2>
-                <h3>
-                  상담신청 후 담당자가 바로 지정되어 상세한 상담을 진행해드립니다. <br>
-                  거래 성사 후 원하시는 날짜에 대금 입금이 가능합니다.
-                </h3>
-              </div>
-            </div>
-            <div class="swiper-slide visual03">
-              <div class="visualTit visualTit03">
-                <h2>현명한 중고차 매매</h2>
-                <h3>
-                  전문 매니져들이 쌓아온 다년간의 노하우로 현명한 선택을 도와드립니다. <br>
-                  365셀카는 고객만족을 위해 최선을 다하고 있습니다.
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="visualPagination">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </article>
-      <article class="counForm back-to-position to-top delay-1">
+  <body>
+    <div id="wrap">
+      <header>
         <div class="inner clearfix">
-          <div class="counTit">
-            <h4>365셀카 무료상담</h4>
-            <p class="blueTxt">내 차 가격, <br> 얼마인지 궁금하세요? <br></p>
-            <p>전문가와의 1:1 맞춤상담으로 차량판매를 도와드립니다.</p>
+          <div class="mobMenu">
+            <a href="javascript:void(0);">
+              <span class="material-icons"> menu </span>
+            </a>
           </div>
-          <form method="post">
-            <div class="counBtn clearfix">
-              <button class="btn btn--tone--down active">내차판매</button>
-              <button class="btn btn--tone--down">내차구매</button>
-              <button class="btn btn--tone--down">중고차 수출</button>
-              <button class="btn btn--tone--down">폐차 서비스</button>
+          <h1 class="logo">
+            <a href="./index.html">
+              <img src="./_img/logo02_w.png" alt="365셀카" />
+            </a>
+          </h1>
+          <nav>
+            <ul class="gnb clearfix">
+              <li class="mobNavClose">
+                <a href="javascript:void(0);">
+                  <span class="material-icons">close</span>
+                </a>
+              </li>
+              <li><a href="./sale/sale.html">내차판매</a></li>
+              <li><a href="./purchase/purchase.html">내차구매</a></li>
+              <li><a href="./export/export.html">중고차수출</a></li>
+              <li><a href="./scrap/scrap.html">폐차서비스</a></li>
+              <li><a href="./guide/sale.html">매매가이드</a></li>
+              <li><a href="./community/notice.html">커뮤니티</a></li>
+            </ul>
+          </nav>
+          <button class="searchBtn">
+            <span class="material-icons">search</span>
+          </button>
+          <div class="searchArea">
+            <div class="searchDetail">
+              <div class="searchIn clearfix">
+                <input type="text" placeholder="검색어를 입력해주세요" />
+                <div class="btnArea">
+                  <button class="btn btn--white--reverse">검색</button>
+                </div>
+              </div>
+              <ul class="searchRecom clearfix">
+                <li><a href="./community/review.html">#매매후기</a></li>
+                <li><a href="./guide/sale.html">#제조사별 보증기간</a></li>
+                <li><a href="./guide/faq.html">#자주묻는질문</a></li>
+              </ul>
             </div>
-            <div class="counDetail">
-              <div class="counLocation">
-                <label for="carType01">지역명</label>
-                <input id="carType01" type="text" placeholder="필수) 지역명을 입력해주세요" name="input[userLocation]" required>
+            <button class="closeBtn">
+              <span class="material-icons">close</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- // header -->
+
+      <section id="mainCon" class="scroll-spy">
+        <article class="mainVisual">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide visual01">
+                <div class="visualTit visualTit01">
+                  <h2>365셀카의 신속함</h2>
+                  <h3>
+                    365셀카는 언제 어디서든 고객님이 원하는 장소로 방문드리며,
+                    <br />
+                    방문 후 차량대금 입금까지 3시간 이내로 이뤄집니다.
+                  </h3>
+                </div>
               </div>
-              <div class="counCar">
-                <label for="carType02">차량명</label>
-                <input id="carType02" type="text" placeholder="필수) 제조사 및 차량명을 입력해주세요" name="input[carName]" required>
+              <div class="swiper-slide visual02">
+                <div class="visualTit visualTit02">
+                  <h2>간편한 거래 진행</h2>
+                  <h3>
+                    상담신청 후 담당자가 바로 지정되어 상세한 상담을
+                    진행해드립니다. <br />
+                    거래 성사 후 원하시는 날짜에 대금 입금이 가능합니다.
+                  </h3>
+                </div>
               </div>
-              <div class="counCar">
-                <label for="carType03">연 &ensp; 식</label>
-                <input id="carType03" type="text" placeholder="선택) 제조사 및 차량명을 입력해주세요" name="input[carYear]">
+              <div class="swiper-slide visual03">
+                <div class="visualTit visualTit03">
+                  <h2>현명한 중고차 매매</h2>
+                  <h3>
+                    전문 매니져들이 쌓아온 다년간의 노하우로 현명한 선택을
+                    도와드립니다. <br />
+                    365셀카는 고객만족을 위해 최선을 다하고 있습니다.
+                  </h3>
+                </div>
               </div>
-              <div class="counTel">
-                <label for="carType04">연락처</label>
-                <input id="carType04" type="tel" placeholder="필수) 연락처를 입력해주세요" name="input[userPhone]" required>
+            </div>
+            <div class="visualPagination">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </article>
+        <article class="counForm back-to-position to-top delay-1">
+          <div class="inner clearfix">
+            <div class="counTit">
+              <h4>365셀카 무료상담</h4>
+              <p class="blueTxt">
+                내 차 가격, <br />
+                얼마인지 궁금하세요? <br />
+              </p>
+              <p>전문가와의 1:1 맞춤상담으로 차량판매를 도와드립니다.</p>
+            </div>
+            <form method="post">
+              <div class="counBtn clearfix">
+                <button class="btn btn--tone--down active">내차판매</button>
+                <button class="btn btn--tone--down">내차구매</button>
+                <button class="btn btn--tone--down">중고차 수출</button>
+                <button class="btn btn--tone--down">폐차 서비스</button>
+              </div>
+              <div class="counDetail">
+                <div class="counLocation">
+                  <label for="carType01">지역명</label>
+                  <input
+                    id="carType01"
+                    type="text"
+                    placeholder="필수) 지역명을 입력해주세요"
+                    name="input[userLocation]"
+                    required
+                  />
+                </div>
+                <div class="counCar">
+                  <label for="carType02">차량명</label>
+                  <input
+                    id="carType02"
+                    type="text"
+                    placeholder="필수) 제조사 및 차량명을 입력해주세요"
+                    name="input[carName]"
+                    required
+                  />
+                </div>
+                <div class="counCar">
+                  <label for="carType03">연 &ensp; 식</label>
+                  <input
+                    id="carType03"
+                    type="text"
+                    placeholder="선택) 제조사 및 차량명을 입력해주세요"
+                    name="input[carYear]"
+                  />
+                </div>
+                <div class="counTel">
+                  <label for="carType04">연락처</label>
+                  <input
+                    id="carType04"
+                    type="tel"
+                    placeholder="필수) 연락처를 입력해주세요"
+                    name="input[userPhone]"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="counCheck">
+                <div class="checks">
+                  <input
+                    type="checkbox"
+                    name="input[agreeYN]"
+                    id="perCheck"
+                    value="Y"
+                    checked
+                    required
+                  />
+                  <label for="perCheck">개인정보수집/이용 동의</label>
+                  <a
+                    href="javascript:void(0)"
+                    class="agreeFormBtn btn btn--reverse"
+                    >개인정보 처리방침</a
+                  >
+                </div>
+                <div class="btnArea">
+                  <button class="btn">상담신청</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+      <!-- // mainCon -->
+
+      <section id="ourWork" class="scroll-spy">
+        <div class="inner clearfix">
+          <div class="titArea back-to-position to-txt-right delay-0">
+            <strong>365셀카가 제공하는 중고차 서비스</strong>
+            <h4>
+              Sale & Purchase <br />
+              Export <br />
+              Scrap
+            </h4>
+          </div>
+          <article class="workIcon clearfix">
+            <div class="workDetail clearfix">
+              <div class="workSale back-to-position to-top delay-1">
+                <a href="./sale/sale.html">
+                  <div class="iconArea">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Layer_1"
+                      data-name="Layer 1"
+                      viewBox="0 0 190.99 130"
+                    >
+                      <polygon
+                        class="cls-1"
+                        points="0 0 190.99 0 190.99 6.79 190.99 15.27 190.99 130 181.99 130 181.99 15.27 8.99 15.27 8.99 130 0 130 0 15.27 0 6.79 0 0 0 0"
+                      />
+                      <path
+                        class="cls-2"
+                        d="M1029.43,528.4a5.08,5.08,0,0,0-5.06-5.07h-2.53a5,5,0,0,0-2.89.91l-15.27-13.15C997.13,505.46,990.3,501,981.36,501H938.74c-8.94,0-15.77,4.45-22.32,10.09l-15.27,13.15a5,5,0,0,0-2.89-.91h-2.53a5.06,5.06,0,0,0-2.06,9.69c-1.75,2.47-1.79,5.53-1.79,8.46v31.11a9.11,9.11,0,0,0,9.09,9.08h118.12a9.11,9.11,0,0,0,9.1-9.08V541.48c0-2.94,0-6-1.78-8.46A5.08,5.08,0,0,0,1029.43,528.4Zm-90.69-18.92h42.62c11.59,0,21.33,11.9,29.45,19H909.29C917.41,521.39,927.14,509.49,938.74,509.49Zm-27,50.39a8.9,8.9,0,1,1,8.89-8.9A8.89,8.89,0,0,1,911.76,559.88Zm96.59,0a8.9,8.9,0,1,1,8.89-8.9A8.9,8.9,0,0,1,1008.34,559.88Z"
+                        transform="translate(-863.89 -475.41)"
+                      />
+                      <path
+                        class="cls-2"
+                        d="M897,584.52v10.2a10.73,10.73,0,0,0,10.7,10.7h0a10.73,10.73,0,0,0,10.7-10.7v-9.56H901A12.48,12.48,0,0,1,897,584.52Z"
+                        transform="translate(-863.89 -475.41)"
+                      />
+                      <path
+                        class="cls-2"
+                        d="M1000.31,585.15v9.56a10.71,10.71,0,0,0,21.41,0v-9.83a13,13,0,0,1-2.61.27Z"
+                        transform="translate(-863.89 -475.41)"
+                      />
+                    </svg>
+                  </div>
+                  <p>내차판매</p>
+                </a>
+              </div>
+              <div class="workPro back-to-position to-top delay-2">
+                <a href="./purchase/purchase.html">
+                  <div class="iconArea">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Layer_2"
+                      data-name="Layer 1"
+                      viewBox="0 0 249.9 120"
+                    >
+                      <path
+                        class="cls-1"
+                        d="M1032.65,582.77a8.82,8.82,0,1,1-8.82,8.82,8.82,8.82,0,0,1,8.82-8.82Z"
+                        transform="translate(-835.76 -480.41)"
+                      />
+                      <path
+                        class="cls-1"
+                        d="M989.54,582.77a8.82,8.82,0,1,1-8.83,8.82,8.81,8.81,0,0,1,8.83-8.82Z"
+                        transform="translate(-835.76 -480.41)"
+                      />
+                      <path
+                        class="cls-2"
+                        d="M1084.17,505.26H1067a1.47,1.47,0,0,0-1.41,1l-5.12,16.08H951.2a1.49,1.49,0,0,0-1.44,1.84l13.43,55.73a1.46,1.46,0,0,0,1.44,1.14h89.31a1.48,1.48,0,0,0,1.44-1.08l18.34-64.9h10.46a1.49,1.49,0,0,0,1.49-1.49v-6.86A1.5,1.5,0,0,0,1084.17,505.26Zm-37.72,67.67h-75.7l-10.18-42.32c33.18,0,64.66,0,97.84,0Q1052.43,551.78,1046.45,572.93Z"
+                        transform="translate(-835.76 -480.41)"
+                      />
+                      <path
+                        class="cls-2"
+                        d="M892.19,538.6a24.18,24.18,0,1,0,24.16,24.18A24.18,24.18,0,0,0,892.19,538.6Zm0,33.72a9.54,9.54,0,1,1,9.54-9.54A9.54,9.54,0,0,1,892.19,572.32Z"
+                        transform="translate(-835.76 -480.41)"
+                      />
+                      <path
+                        class="cls-2"
+                        d="M952,516.42h104.68l1.9-6.39c-13.74-22.4-22.3-29.51-41.27-29.54l-49.47-.09c-25.31,0-36.31,6.92-58.38,29.6-32.45,4.13-26.42,4.63-50.68,8.34-8.85,1.35-10.36,3.75-12.85,9.72q-2.65,6.31-5.29,12.64h-1.3a2.64,2.64,0,0,0-1.93.87c-3.16,3.15-1.7,19.59,3.87,19.59h20a31.19,31.19,0,0,1,62.37,0h29.71l-8.57-35.58a7.44,7.44,0,0,1,7.23-9.17Zm-86.65,10-18.19,8.05,2.11-5a17.34,17.34,0,0,1,2.63-4.85c1.68-1.76,5.16-2.35,7.45-2.7l6.38-1Zm122.19-39,25.38,0c4.9,0,9.94.5,14.43,2.6,7.06,3.31,13.5,11.78,18.68,19.92H987.53ZM919.45,510c14.73-14.84,20.48-22.65,44-22.61l17.73,0V510Z"
+                        transform="translate(-835.76 -480.41)"
+                      />
+                    </svg>
+                  </div>
+                  <p>내차구매</p>
+                </a>
+              </div>
+              <div class="workExport back-to-position to-top delay-3">
+                <a href="./export/export.html">
+                  <div class="iconArea">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Layer_3"
+                      data-name="Layer 1"
+                      viewBox="0 0 217.12 125"
+                    >
+                      <path
+                        class="cls-1"
+                        d="M1066.11,535.2H1059v-9.33h-9.33v-9.33h-9.33v-9.33H1031v-5.56h-10.85l-4.74,8.2H951.67l-5.74-14.93,2.65-17h-3.44l-8.07,17h-13l-54.57,50.54h196.58ZM910.27,516.54h125.61v7H902.67Zm135.52,22.18H886.32l7.6-7h151.87Z"
+                        transform="translate(-851.43 -477.91)"
+                      />
+                      <path
+                        class="cls-1"
+                        d="M851.43,549.77l36.47,53.14h159.68l21-53.14Zm47.17,15.3a4.59,4.59,0,1,1,4.59,4.6A4.59,4.59,0,0,1,898.6,565.07Zm33.76,0a4.59,4.59,0,1,1,4.59,4.6A4.6,4.6,0,0,1,932.36,565.07Zm33.76,0a4.59,4.59,0,1,1,4.59,4.6A4.6,4.6,0,0,1,966.11,565.07Zm33.75,0a4.59,4.59,0,1,1,4.59,4.6A4.6,4.6,0,0,1,999.87,565.07Zm38.35,4.6a4.6,4.6,0,1,1,4.59-4.6A4.6,4.6,0,0,1,1038.22,569.67Z"
+                        transform="translate(-851.43 -477.91)"
+                      />
+                    </svg>
+                  </div>
+                  <p>중고차수출</p>
+                </a>
+              </div>
+              <div class="workScrap back-to-position to-top delay-4">
+                <a href="./scrap/scrap.html">
+                  <div class="iconArea">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Layer_4"
+                      data-name="Layer 1"
+                      viewBox="0 0 243.45 120"
+                    >
+                      <path
+                        class="cls-1"
+                        d="M936.79,560.93c0-.07,0-.13,0-.2v-2a2.33,2.33,0,0,0-2.32-2.33H931l14.47-61.64,4.14,27.5a3.54,3.54,0,0,0-.57.85,7.25,7.25,0,0,0-3,2.18,9.73,9.73,0,0,0,0,12.13,6.62,6.62,0,0,0,10.47,0,9.45,9.45,0,0,0,2.11-6.06v-.27h0v-.25a.64.64,0,0,0-1.27-.11,5.43,5.43,0,0,1-1.55,2.87,3.8,3.8,0,0,1-2.58,1.06,3.91,3.91,0,0,1-3-1.49,5.78,5.78,0,0,1-1.29-3.72,6.26,6.26,0,0,1,.31-1.93,2.11,2.11,0,0,0,2,1.36c1.15,0,2.65-2.08,2.65-3.69a3.63,3.63,0,0,0-1-2.91L948.73,490c4.19-6.48-3.39-12.6-8.86-5.32l-28,71.69h-4.42a2.33,2.33,0,0,0-2.33,2.33v2c0,.07,0,.14,0,.2h-1.88V504.47a7,7,0,0,0-7-7H880.19a11.88,11.88,0,0,0-9.22,3.82l-33.51,37.52V576a6.68,6.68,0,0,0,6.67,6.67h4a21,21,0,0,1,41.73,0H931.1a21,21,0,0,1,41.73,0h6.9c10.58,0,12.18-13.87,12.18-21.7ZM884.3,538H847.45l29-33a3.14,3.14,0,0,1,2.46-1h5.39Z"
+                        transform="translate(-837.47 -481.41)"
+                      />
+                      <path
+                        class="cls-1"
+                        d="M952,568.9a16.26,16.26,0,1,0,16.25,16.26A16.26,16.26,0,0,0,952,568.9Zm0,24.39a8.13,8.13,0,1,1,8.12-8.13A8.13,8.13,0,0,1,952,593.28Z"
+                        transform="translate(-837.47 -481.41)"
+                      />
+                      <path
+                        class="cls-1"
+                        d="M869,568.9a16.26,16.26,0,1,0,16.26,16.26A16.26,16.26,0,0,0,869,568.9Zm0,24.39a8.13,8.13,0,1,1,8.13-8.13A8.13,8.13,0,0,1,869,593.28Z"
+                        transform="translate(-837.47 -481.41)"
+                      />
+                      <path
+                        class="cls-1"
+                        d="M1080.51,571.14a3.36,3.36,0,0,0-.21-.7c-7.22-17.17-19.3-30.06-35.54-39-16.73-9.25-28.74-7.1-47-5.42a3.33,3.33,0,0,0-.49.09,181.07,181.07,0,0,0-22.09-7.78c-8.46-2.34-29.88,12.53-21.71,17.33L966.06,543l.32-.54a17.37,17.37,0,0,1,30,17.6l-.32.54,34.43,20.23.32-.54a17.33,17.33,0,0,1,30,17.37l-.36.63.67.26a13.7,13.7,0,0,0,14.56-2.46c2.71-2.46,5.23-7,3.48-10.67a5.36,5.36,0,0,0-.72-1.11c.4-1.95,1.26-3.84,1.83-5.74A13.2,13.2,0,0,0,1080.51,571.14ZM974.12,526.65a5.58,5.58,0,0,1-6.28.75,2.59,2.59,0,0,1-.52-4.35,5.58,5.58,0,0,1,6.29-.74A2.58,2.58,0,0,1,974.12,526.65Zm32.95,4.75c13.32-1.23,22.14-1.43,34.65,5.49q2.1,1.16,4.13,2.44l-6.49,11Zm37.14,21.82,6.3-10.73a71,71,0,0,1,22.88,27.87Z"
+                        transform="translate(-837.47 -481.41)"
+                      />
+                      <path
+                        class="cls-1"
+                        d="M1052,578.44a12.33,12.33,0,1,0,4.38,16.88A12.33,12.33,0,0,0,1052,578.44Zm-1.3,13.54a5.73,5.73,0,1,1-2-7.85A5.73,5.73,0,0,1,1050.66,592Z"
+                        transform="translate(-837.47 -481.41)"
+                      />
+                      <path
+                        class="cls-1"
+                        d="M987.61,540.64A12.33,12.33,0,1,0,992,557.51,12.33,12.33,0,0,0,987.61,540.64Zm-1.3,13.54a5.74,5.74,0,1,1-2-7.85A5.74,5.74,0,0,1,986.31,554.17Z"
+                        transform="translate(-837.47 -481.41)"
+                      />
+                    </svg>
+                  </div>
+                  <p>폐차서비스</p>
+                </a>
+              </div>
+            </div>
+            <h5 class="back-to-position to-left delay-5">
+              365셀카는 고객님들이 편리함을 누리실 수 있도록 판매 & 구매 부터
+              중고차 수출, 폐차 서비스까지 <br />
+              전문 매니져와의 상담을 통해 중고차에 관련된 모든 서비스를 맞춤
+              제공합니다.
+            </h5>
+          </article>
+        </div>
+      </section>
+      <!-- // ourWork -->
+
+      <section id="recommendation" class="scroll-spy">
+        <div class="inner clearfix">
+          <div class="titArea back-to-position to-txt-right delay-0">
+            <strong>이달의 추천차량</strong>
+            <h4>
+              Vehicle <br />
+              of the Month
+            </h4>
+          </div>
+          <ul class="recoList clearfix">
+            <li class="back-to-position to-top delay-1">
+              <figure>
+                <img src="./_img/i30.jpg" alt="추천차량" />
+              </figure>
+              <div class="txtArea">
+                <h5><span>현대</span>i30</h5>
+                <p>
+                  현대자동차의 해치백 승용차의 계보를 이었던 모델로, <br />
+                  애당초 개발목적은 유럽시장용으로 기획된 모델이다.
+                </p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tr>
+                    <th>출시</th>
+                    <td>2020. 01</td>
+                  </tr>
+                  <tr>
+                    <th>연료</th>
+                    <td>가솔린</td>
+                  </tr>
+                  <tr>
+                    <th>승차인원</th>
+                    <td>5인승</td>
+                  </tr>
+                  <tr class="prize">
+                    <th>월납입금</th>
+                    <td>￦ 500,000</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="back-to-position to-top delay-2">
+              <figure>
+                <img src="./_img/i30.jpg" alt="추천차량" />
+              </figure>
+              <div class="txtArea">
+                <h5><span>현대</span>i30</h5>
+                <p>
+                  현대자동차의 해치백 승용차의 계보를 이었던 모델로, <br />
+                  애당초 개발목적은 유럽시장용으로 기획된 모델이다.
+                </p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tr>
+                    <th>출시</th>
+                    <td>2020. 01</td>
+                  </tr>
+                  <tr>
+                    <th>연료</th>
+                    <td>가솔린</td>
+                  </tr>
+                  <tr>
+                    <th>승차인원</th>
+                    <td>5인승</td>
+                  </tr>
+                  <tr class="prize">
+                    <th>월납입금</th>
+                    <td>￦ 500,000</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="back-to-position to-top delay-3">
+              <figure>
+                <img src="./_img/i30.jpg" alt="추천차량" />
+              </figure>
+              <div class="txtArea">
+                <h5><span>현대</span>i30</h5>
+                <p>
+                  현대자동차의 해치백 승용차의 계보를 이었던 모델로, <br />
+                  애당초 개발목적은 유럽시장용으로 기획된 모델이다.
+                </p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tr>
+                    <th>출시</th>
+                    <td>2020. 01</td>
+                  </tr>
+                  <tr>
+                    <th>연료</th>
+                    <td>가솔린</td>
+                  </tr>
+                  <tr>
+                    <th>승차인원</th>
+                    <td>5인승</td>
+                  </tr>
+                  <tr class="prize">
+                    <th>월납입금</th>
+                    <td>￦ 500,000</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="back-to-position to-top delay-4">
+              <figure>
+                <img src="./_img/i30.jpg" alt="추천차량" />
+              </figure>
+              <div class="txtArea">
+                <h5><span>현대</span>i30</h5>
+                <p>
+                  현대자동차의 해치백 승용차의 계보를 이었던 모델로, <br />
+                  애당초 개발목적은 유럽시장용으로 기획된 모델이다.
+                </p>
+                <table>
+                  <colgroup>
+                    <col style="width: 30%" />
+                    <col style="width: 70%" />
+                  </colgroup>
+                  <tr>
+                    <th>출시</th>
+                    <td>2020. 01</td>
+                  </tr>
+                  <tr>
+                    <th>연료</th>
+                    <td>가솔린</td>
+                  </tr>
+                  <tr>
+                    <th>승차인원</th>
+                    <td>5인승</td>
+                  </tr>
+                  <tr class="prize">
+                    <th>월납입금</th>
+                    <td>￦ 500,000</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- // recommendation -->
+
+      <section id="counseling" class="scroll-spy">
+        <div class="inner clearfix">
+          <div class="titArea back-to-position to-txt-right">
+            <strong>상담리스트</strong>
+            <h4>Counseling</h4>
+          </div>
+          <article class="count back-to-position to-left">
+            <div class="counTotal">
+              <div class="txtArea">
+                <h5>전체상담건수</h5>
+                <h3 class="counter">111,111</h3>
               </div>
             </div>
             <div class="counCheck">
-              <div class="checks">
-                <input type="checkbox" name="input[agreeYN]" id="perCheck" value="Y" checked required>
-                <label for="perCheck">개인정보수집/이용 동의</label>
-                <a href="javascript:void(0)" class="agreeFormBtn btn btn--reverse">개인정보 처리방침</a>
-              </div>
-              <div class="btnArea">
-                <button class="btn">상담신청</button>
+              <div class="txtArea">
+                <h5>완료상담건수</h5>
+                <h3 class="counter">111,111</h3>
               </div>
             </div>
-          </form>
+          </article>
+          <article class="sellList back-to-position to-left">
+            <h5>판매상담리스트</h5>
+            <div class="roofSell">
+              <ul>
+                <li class="clearfix">
+                  <div class="sellState"><span>상담중</span></div>
+                  <div class="sellTit">
+                    [ 현대 그렌저 ] 차량의 상담신청을 원합니다.
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="sellState"><span>상담대기</span></div>
+                  <div class="sellTit">
+                    [ 현대 그렌저 ] 차량의 상담신청을 원합니다.
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="sellState">
+                    <span class="sellCompletion">상담완료</span>
+                  </div>
+                  <div class="sellTit">
+                    [ 현대 그렌저 ] 차량의 상담신청을 원합니다.
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="sellState"><span>상담중</span></div>
+                  <div class="sellTit">
+                    [ 현대 그렌저 ] 차량의 상담신청을 원합니다.
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="sellState"><span>상담대기</span></div>
+                  <div class="sellTit">
+                    [ 현대 그렌저 ] 차량의 상담신청을 원합니다.
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="sellState">
+                    <span class="sellCompletion">상담완료</span>
+                  </div>
+                  <div class="sellTit">
+                    [ 현대 그렌저 ] 차량의 상담신청을 원합니다.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </article>
         </div>
-      </article>
-    </section>
-    <!-- // mainCon -->
+      </section>
+      <!-- // counseling -->
 
-    <section id="ourWork" class="scroll-spy">
-      <div class="inner clearfix">
-        <div class="titArea back-to-position to-txt-right delay-0">
-          <strong>365셀카가 제공하는 중고차 서비스</strong>
-          <h4>
-            Sale & Purchase <br>
-            Export <br>
-            Scrap
-          </h4>
-        </div>
-        <article class="workIcon clearfix">
-          <div class="workDetail clearfix">
-            <div class="workSale back-to-position to-top delay-1">
-              <a href="./sale/sale.html">
-                <div class="iconArea">
-                  <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 190.99 130">
-                    <polygon class="cls-1"
-                      points="0 0 190.99 0 190.99 6.79 190.99 15.27 190.99 130 181.99 130 181.99 15.27 8.99 15.27 8.99 130 0 130 0 15.27 0 6.79 0 0 0 0" />
-                    <path class="cls-2"
-                      d="M1029.43,528.4a5.08,5.08,0,0,0-5.06-5.07h-2.53a5,5,0,0,0-2.89.91l-15.27-13.15C997.13,505.46,990.3,501,981.36,501H938.74c-8.94,0-15.77,4.45-22.32,10.09l-15.27,13.15a5,5,0,0,0-2.89-.91h-2.53a5.06,5.06,0,0,0-2.06,9.69c-1.75,2.47-1.79,5.53-1.79,8.46v31.11a9.11,9.11,0,0,0,9.09,9.08h118.12a9.11,9.11,0,0,0,9.1-9.08V541.48c0-2.94,0-6-1.78-8.46A5.08,5.08,0,0,0,1029.43,528.4Zm-90.69-18.92h42.62c11.59,0,21.33,11.9,29.45,19H909.29C917.41,521.39,927.14,509.49,938.74,509.49Zm-27,50.39a8.9,8.9,0,1,1,8.89-8.9A8.89,8.89,0,0,1,911.76,559.88Zm96.59,0a8.9,8.9,0,1,1,8.89-8.9A8.9,8.9,0,0,1,1008.34,559.88Z"
-                      transform="translate(-863.89 -475.41)" />
-                    <path class="cls-2"
-                      d="M897,584.52v10.2a10.73,10.73,0,0,0,10.7,10.7h0a10.73,10.73,0,0,0,10.7-10.7v-9.56H901A12.48,12.48,0,0,1,897,584.52Z"
-                      transform="translate(-863.89 -475.41)" />
-                    <path class="cls-2" d="M1000.31,585.15v9.56a10.71,10.71,0,0,0,21.41,0v-9.83a13,13,0,0,1-2.61.27Z"
-                      transform="translate(-863.89 -475.41)" />
-                  </svg>
-                </div>
-                <p>내차판매</p>
-              </a>
-            </div>
-            <div class="workPro back-to-position to-top delay-2">
-              <a href="./purchase/purchase.html">
-                <div class="iconArea">
-                  <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 1" viewBox="0 0 249.9 120">
-                    <path class="cls-1" d="M1032.65,582.77a8.82,8.82,0,1,1-8.82,8.82,8.82,8.82,0,0,1,8.82-8.82Z"
-                      transform="translate(-835.76 -480.41)" />
-                    <path class="cls-1" d="M989.54,582.77a8.82,8.82,0,1,1-8.83,8.82,8.81,8.81,0,0,1,8.83-8.82Z"
-                      transform="translate(-835.76 -480.41)" />
-                    <path class="cls-2"
-                      d="M1084.17,505.26H1067a1.47,1.47,0,0,0-1.41,1l-5.12,16.08H951.2a1.49,1.49,0,0,0-1.44,1.84l13.43,55.73a1.46,1.46,0,0,0,1.44,1.14h89.31a1.48,1.48,0,0,0,1.44-1.08l18.34-64.9h10.46a1.49,1.49,0,0,0,1.49-1.49v-6.86A1.5,1.5,0,0,0,1084.17,505.26Zm-37.72,67.67h-75.7l-10.18-42.32c33.18,0,64.66,0,97.84,0Q1052.43,551.78,1046.45,572.93Z"
-                      transform="translate(-835.76 -480.41)" />
-                    <path class="cls-2"
-                      d="M892.19,538.6a24.18,24.18,0,1,0,24.16,24.18A24.18,24.18,0,0,0,892.19,538.6Zm0,33.72a9.54,9.54,0,1,1,9.54-9.54A9.54,9.54,0,0,1,892.19,572.32Z"
-                      transform="translate(-835.76 -480.41)" />
-                    <path class="cls-2"
-                      d="M952,516.42h104.68l1.9-6.39c-13.74-22.4-22.3-29.51-41.27-29.54l-49.47-.09c-25.31,0-36.31,6.92-58.38,29.6-32.45,4.13-26.42,4.63-50.68,8.34-8.85,1.35-10.36,3.75-12.85,9.72q-2.65,6.31-5.29,12.64h-1.3a2.64,2.64,0,0,0-1.93.87c-3.16,3.15-1.7,19.59,3.87,19.59h20a31.19,31.19,0,0,1,62.37,0h29.71l-8.57-35.58a7.44,7.44,0,0,1,7.23-9.17Zm-86.65,10-18.19,8.05,2.11-5a17.34,17.34,0,0,1,2.63-4.85c1.68-1.76,5.16-2.35,7.45-2.7l6.38-1Zm122.19-39,25.38,0c4.9,0,9.94.5,14.43,2.6,7.06,3.31,13.5,11.78,18.68,19.92H987.53ZM919.45,510c14.73-14.84,20.48-22.65,44-22.61l17.73,0V510Z"
-                      transform="translate(-835.76 -480.41)" />
-                  </svg>
-                </div>
-                <p>내차구매</p>
-              </a>
-            </div>
-            <div class="workExport back-to-position to-top delay-3">
-              <a href="./export/export.html">
-                <div class="iconArea">
-                  <svg xmlns="http://www.w3.org/2000/svg" id="Layer_3" data-name="Layer 1" viewBox="0 0 217.12 125">
-                    <path class="cls-1"
-                      d="M1066.11,535.2H1059v-9.33h-9.33v-9.33h-9.33v-9.33H1031v-5.56h-10.85l-4.74,8.2H951.67l-5.74-14.93,2.65-17h-3.44l-8.07,17h-13l-54.57,50.54h196.58ZM910.27,516.54h125.61v7H902.67Zm135.52,22.18H886.32l7.6-7h151.87Z"
-                      transform="translate(-851.43 -477.91)" />
-                    <path class="cls-1"
-                      d="M851.43,549.77l36.47,53.14h159.68l21-53.14Zm47.17,15.3a4.59,4.59,0,1,1,4.59,4.6A4.59,4.59,0,0,1,898.6,565.07Zm33.76,0a4.59,4.59,0,1,1,4.59,4.6A4.6,4.6,0,0,1,932.36,565.07Zm33.76,0a4.59,4.59,0,1,1,4.59,4.6A4.6,4.6,0,0,1,966.11,565.07Zm33.75,0a4.59,4.59,0,1,1,4.59,4.6A4.6,4.6,0,0,1,999.87,565.07Zm38.35,4.6a4.6,4.6,0,1,1,4.59-4.6A4.6,4.6,0,0,1,1038.22,569.67Z"
-                      transform="translate(-851.43 -477.91)" />
-                  </svg>
-                </div>
-                <p>중고차수출</p>
-              </a>
-            </div>
-            <div class="workScrap back-to-position to-top delay-4">
-              <a href="./scrap/scrap.html">
-                <div class="iconArea">
-                  <svg xmlns="http://www.w3.org/2000/svg" id="Layer_4" data-name="Layer 1" viewBox="0 0 243.45 120">
-                    <path class="cls-1"
-                      d="M936.79,560.93c0-.07,0-.13,0-.2v-2a2.33,2.33,0,0,0-2.32-2.33H931l14.47-61.64,4.14,27.5a3.54,3.54,0,0,0-.57.85,7.25,7.25,0,0,0-3,2.18,9.73,9.73,0,0,0,0,12.13,6.62,6.62,0,0,0,10.47,0,9.45,9.45,0,0,0,2.11-6.06v-.27h0v-.25a.64.64,0,0,0-1.27-.11,5.43,5.43,0,0,1-1.55,2.87,3.8,3.8,0,0,1-2.58,1.06,3.91,3.91,0,0,1-3-1.49,5.78,5.78,0,0,1-1.29-3.72,6.26,6.26,0,0,1,.31-1.93,2.11,2.11,0,0,0,2,1.36c1.15,0,2.65-2.08,2.65-3.69a3.63,3.63,0,0,0-1-2.91L948.73,490c4.19-6.48-3.39-12.6-8.86-5.32l-28,71.69h-4.42a2.33,2.33,0,0,0-2.33,2.33v2c0,.07,0,.14,0,.2h-1.88V504.47a7,7,0,0,0-7-7H880.19a11.88,11.88,0,0,0-9.22,3.82l-33.51,37.52V576a6.68,6.68,0,0,0,6.67,6.67h4a21,21,0,0,1,41.73,0H931.1a21,21,0,0,1,41.73,0h6.9c10.58,0,12.18-13.87,12.18-21.7ZM884.3,538H847.45l29-33a3.14,3.14,0,0,1,2.46-1h5.39Z"
-                      transform="translate(-837.47 -481.41)" />
-                    <path class="cls-1"
-                      d="M952,568.9a16.26,16.26,0,1,0,16.25,16.26A16.26,16.26,0,0,0,952,568.9Zm0,24.39a8.13,8.13,0,1,1,8.12-8.13A8.13,8.13,0,0,1,952,593.28Z"
-                      transform="translate(-837.47 -481.41)" />
-                    <path class="cls-1"
-                      d="M869,568.9a16.26,16.26,0,1,0,16.26,16.26A16.26,16.26,0,0,0,869,568.9Zm0,24.39a8.13,8.13,0,1,1,8.13-8.13A8.13,8.13,0,0,1,869,593.28Z"
-                      transform="translate(-837.47 -481.41)" />
-                    <path class="cls-1"
-                      d="M1080.51,571.14a3.36,3.36,0,0,0-.21-.7c-7.22-17.17-19.3-30.06-35.54-39-16.73-9.25-28.74-7.1-47-5.42a3.33,3.33,0,0,0-.49.09,181.07,181.07,0,0,0-22.09-7.78c-8.46-2.34-29.88,12.53-21.71,17.33L966.06,543l.32-.54a17.37,17.37,0,0,1,30,17.6l-.32.54,34.43,20.23.32-.54a17.33,17.33,0,0,1,30,17.37l-.36.63.67.26a13.7,13.7,0,0,0,14.56-2.46c2.71-2.46,5.23-7,3.48-10.67a5.36,5.36,0,0,0-.72-1.11c.4-1.95,1.26-3.84,1.83-5.74A13.2,13.2,0,0,0,1080.51,571.14ZM974.12,526.65a5.58,5.58,0,0,1-6.28.75,2.59,2.59,0,0,1-.52-4.35,5.58,5.58,0,0,1,6.29-.74A2.58,2.58,0,0,1,974.12,526.65Zm32.95,4.75c13.32-1.23,22.14-1.43,34.65,5.49q2.1,1.16,4.13,2.44l-6.49,11Zm37.14,21.82,6.3-10.73a71,71,0,0,1,22.88,27.87Z"
-                      transform="translate(-837.47 -481.41)" />
-                    <path class="cls-1"
-                      d="M1052,578.44a12.33,12.33,0,1,0,4.38,16.88A12.33,12.33,0,0,0,1052,578.44Zm-1.3,13.54a5.73,5.73,0,1,1-2-7.85A5.73,5.73,0,0,1,1050.66,592Z"
-                      transform="translate(-837.47 -481.41)" />
-                    <path class="cls-1"
-                      d="M987.61,540.64A12.33,12.33,0,1,0,992,557.51,12.33,12.33,0,0,0,987.61,540.64Zm-1.3,13.54a5.74,5.74,0,1,1-2-7.85A5.74,5.74,0,0,1,986.31,554.17Z"
-                      transform="translate(-837.47 -481.41)" />
-                  </svg>
-                </div>
-                <p>폐차서비스</p>
-              </a>
-            </div>
+      <section id="procedure" class="scroll-spy">
+        <div class="inner clearfix">
+          <div class="titArea back-to-position to-bottom delay-0">
+            <strong>매입 절차 안내</strong>
+            <h4>Sales procedure</h4>
           </div>
-          <h5 class="back-to-position to-left delay-5">
-            365셀카는 고객님들이 편리함을 누리실 수 있도록 판매 & 구매 부터 중고차 수출, 폐차 서비스까지 <br>
-            전문 매니져와의 상담을 통해 중고차에 관련된 모든 서비스를 맞춤 제공합니다.
-          </h5>
-        </article>
-      </div>
-    </section>
-    <!-- // ourWork -->
+          <article class="diagram">
+            <ul class="clearfix">
+              <li class="diaApplication back-to-position to-top delay-0">
+                <figure>
+                  <img src="./_img/ico_sale01.png" alt="상담신청" />
+                </figure>
+                <div class="txtArea">
+                  <h5>상담신청</h5>
+                  <p>
+                    "내차판매"에서 정보를 입력 후 <br />
+                    상담신청 버튼을 눌러주세요.
+                  </p>
+                </div>
+              </li>
+              <li class="diaCounseling back-to-position to-top delay-1">
+                <figure>
+                  <img src="./_img/ico_sale02.png" alt="담당자 상담" />
+                </figure>
+                <div class="txtArea">
+                  <h5>담당자 상담</h5>
+                  <p>
+                    접수된 상담요청을 바탕으로 <br />
+                    고객님께 연락드립니다.
+                  </p>
+                </div>
+              </li>
+              <li class="diaDiagnosis back-to-position to-top delay-2">
+                <figure>
+                  <img src="./_img/ico_sale03.png" alt="출장진단 & 가격상담" />
+                </figure>
+                <div class="txtArea">
+                  <h5>출장진단 &amp; 가격상담</h5>
+                  <p>
+                    담당자가 방문하여 <br />
+                    맞춤상담을 도와드립니다.
+                  </p>
+                </div>
+              </li>
+              <li class="diaContract back-to-position to-top delay-3">
+                <figure>
+                  <img src="./_img/ico_sale04.png" alt="계약 후 차량대금송금" />
+                </figure>
+                <div class="txtArea">
+                  <h5>계약 후 차량대금송금</h5>
+                  <p>
+                    거래가 성사되면 계약서 작성 후 <br />
+                    차량대금을 입급해드립니다.
+                  </p>
+                </div>
+              </li>
+              <li class="diaConsignment back-to-position to-top delay-4">
+                <figure>
+                  <img src="./_img/ico_sale05.png" alt="차량탁송" />
+                </figure>
+                <div class="txtArea">
+                  <div class="txtArea">
+                    <h5>차량탁송</h5>
+                    <p>
+                      입금확인이 완료되면 <br />
+                      담당자가 차량을 탁송합니다.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="diaCompletion back-to-position to-top delay-5">
+                <figure>
+                  <img src="./_img/ico_sale06.png" alt="명의이전 & 거래완료" />
+                </figure>
+                <div class="txtArea">
+                  <h5>명의이전 &amp; 거래완료</h5>
+                  <p>
+                    명의이전이 완료된 후 <br />
+                    모든 판매과정이 완료됩니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- // procedure -->
 
-    <section id="recommendation" class="scroll-spy">
-      <div class="inner clearfix">
-        <div class="titArea back-to-position to-txt-right delay-0">
-          <strong>이달의 추천차량</strong>
-          <h4>Vehicle <br> of the Month</h4>
-        </div>
-        <ul class="recoList clearfix">
-          <li class="back-to-position to-top delay-1">
-            <figure>
-              <img src="./_img/i30.jpg" alt="추천차량">
-            </figure>
-            <div class="txtArea">
-              <h5><span>현대</span>i30</h5>
-              <p>
-                현대자동차의 해치백 승용차의 계보를 이었던 모델로, <br>
-                애당초 개발목적은 유럽시장용으로 기획된 모델이다.
-              </p>
-              <table>
-                <colgroup>
-                  <col style="width: 30%;">
-                  <col style="width: 70%;">
-                </colgroup>
-                <tr>
-                  <th>출시</th>
-                  <td>2020. 01</td>
-                </tr>
-                <tr>
-                  <th>연료</th>
-                  <td>가솔린</td>
-                </tr>
-                <tr>
-                  <th>승차인원</th>
-                  <td>5인승</td>
-                </tr>
-                <tr class="prize">
-                  <th>월납입금</th>
-                  <td>￦ 500,000</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-          <li class="back-to-position to-top delay-2">
-            <figure>
-              <img src="./_img/i30.jpg" alt="추천차량">
-            </figure>
-            <div class="txtArea">
-              <h5><span>현대</span>i30</h5>
-              <p>
-                현대자동차의 해치백 승용차의 계보를 이었던 모델로, <br>
-                애당초 개발목적은 유럽시장용으로 기획된 모델이다.
-              </p>
-              <table>
-                <colgroup>
-                  <col style="width: 30%;">
-                  <col style="width: 70%;">
-                </colgroup>
-                <tr>
-                  <th>출시</th>
-                  <td>2020. 01</td>
-                </tr>
-                <tr>
-                  <th>연료</th>
-                  <td>가솔린</td>
-                </tr>
-                <tr>
-                  <th>승차인원</th>
-                  <td>5인승</td>
-                </tr>
-                <tr class="prize">
-                  <th>월납입금</th>
-                  <td>￦ 500,000</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-          <li class="back-to-position to-top delay-3">
-            <figure>
-              <img src="./_img/i30.jpg" alt="추천차량">
-            </figure>
-            <div class="txtArea">
-              <h5><span>현대</span>i30</h5>
-              <p>
-                현대자동차의 해치백 승용차의 계보를 이었던 모델로, <br>
-                애당초 개발목적은 유럽시장용으로 기획된 모델이다.
-              </p>
-              <table>
-                <colgroup>
-                  <col style="width: 30%;">
-                  <col style="width: 70%;">
-                </colgroup>
-                <tr>
-                  <th>출시</th>
-                  <td>2020. 01</td>
-                </tr>
-                <tr>
-                  <th>연료</th>
-                  <td>가솔린</td>
-                </tr>
-                <tr>
-                  <th>승차인원</th>
-                  <td>5인승</td>
-                </tr>
-                <tr class="prize">
-                  <th>월납입금</th>
-                  <td>￦ 500,000</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-          <li class="back-to-position to-top delay-4">
-            <figure>
-              <img src="./_img/i30.jpg" alt="추천차량">
-            </figure>
-            <div class="txtArea">
-              <h5><span>현대</span>i30</h5>
-              <p>
-                현대자동차의 해치백 승용차의 계보를 이었던 모델로, <br>
-                애당초 개발목적은 유럽시장용으로 기획된 모델이다.
-              </p>
-              <table>
-                <colgroup>
-                  <col style="width: 30%;">
-                  <col style="width: 70%;">
-                </colgroup>
-                <tr>
-                  <th>출시</th>
-                  <td>2020. 01</td>
-                </tr>
-                <tr>
-                  <th>연료</th>
-                  <td>가솔린</td>
-                </tr>
-                <tr>
-                  <th>승차인원</th>
-                  <td>5인승</td>
-                </tr>
-                <tr class="prize">
-                  <th>월납입금</th>
-                  <td>￦ 500,000</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- // recommendation -->
-
-    <section id="counseling" class="scroll-spy">
-      <div class="inner clearfix">
-        <div class="titArea back-to-position to-txt-right">
-          <strong>상담리스트</strong>
-          <h4>Counseling</h4>
-        </div>
-        <article class="count back-to-position to-left">
-          <div class="counTotal">
-            <div class="txtArea">
-              <h5>전체상담건수</h5>
-              <h3 class="counter">111,111</h3>
-            </div>
+      <section id="guide" class="scroll-spy">
+        <div class="inner clearfix">
+          <div class="titArea back-to-position to-txt-left delay-0">
+            <strong>매매 가이드</strong>
+            <h4>Sales guide</h4>
           </div>
-          <div class="counCheck">
-            <div class="txtArea">
-              <h5>완료상담건수</h5>
-              <h3 class="counter">111,111</h3>
-            </div>
-          </div>
-        </article>
-        <article class="sellList back-to-position to-left">
-          <h5>판매상담리스트</h5>
-          <div class="roofSell">
+          <article class="guideDetail">
             <ul>
-              <li class="clearfix">
-                <div class="sellState"><span>상담중</span></div>
-                <div class="sellTit"> [ 현대 그렌저 ] 차량의 상담신청을 원합니다.</div>
+              <li class="guiSale back-to-position to-right delay-3">
+                <a href="/guide_sale.html">
+                  <h5>간편한 내차판매</h5>
+                </a>
               </li>
-              <li class="clearfix">
-                <div class="sellState"><span>상담대기</span></div>
-                <div class="sellTit"> [ 현대 그렌저 ] 차량의 상담신청을 원합니다.</div>
+              <li class="guiPurchase back-to-position to-right delay-2">
+                <a href="/guide_purchase.html">
+                  <h5>합리적 내차구매</h5>
+                </a>
               </li>
-              <li class="clearfix">
-                <div class="sellState"><span class="sellCompletion">상담완료</span></div>
-                <div class="sellTit"> [ 현대 그렌저 ] 차량의 상담신청을 원합니다.</div>
+              <li class="guiAssurance back-to-position to-right delay-1">
+                <a href="guide_assurance.html">
+                  <h5>제조사별 보증기간</h5>
+                </a>
               </li>
-              <li class="clearfix">
-                <div class="sellState"><span>상담중</span></div>
-                <div class="sellTit"> [ 현대 그렌저 ] 차량의 상담신청을 원합니다.</div>
+              <li class="guiFaq back-to-position to-right delay-0">
+                <a href="guide_faq.html">
+                  <h5>자주묻는질문</h5>
+                </a>
               </li>
-              <li class="clearfix">
-                <div class="sellState"><span>상담대기</span></div>
-                <div class="sellTit"> [ 현대 그렌저 ] 차량의 상담신청을 원합니다.</div>
-              </li>
-              <li class="clearfix">
-                <div class="sellState"><span class="sellCompletion">상담완료</span></div>
-                <div class="sellTit"> [ 현대 그렌저 ] 차량의 상담신청을 원합니다.</div>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- // guide -->
+
+      <section id="review" class="scroll-spy">
+        <div class="inner">
+          <div class="titArea back-to-position to-txt-left delay-0">
+            <strong>매매후기</strong>
+            <h4>Review</h4>
+          </div>
+          <div class="swiper-container back-to-position to-right delay-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <figure>
+                    <img src="./_img/review.png" alt="리뷰" />
+                  </figure>
+                  <div class="txtArea">
+                    <h5>안녕하세요</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iure, quo ducimus, consequatur placeat similique tempora
+                      eligendi veniam accusamus consequuntur ut repellat
+                      molestias reprehenderit
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  <figure>
+                    <img src="./_img/review.png" alt="리뷰" />
+                  </figure>
+                  <div class="txtArea">
+                    <h5>안녕하세요</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iure, quo ducimus, consequatur placeat similique tempora
+                      eligendi veniam accusamus consequuntur ut repellat
+                      molestias reprehenderit
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-button-prev back-to-position to-right delay-1"
+          ></div>
+          <div
+            class="swiper-button-next back-to-position to-right delay-1"
+          ></div>
+        </div>
+      </section>
+      <!-- // review -->
+
+      <footer>
+        <article class="footCopy">
+          <div class="inner">
+            <ul>
+              <li><span>상호</span> OOOO</li>
+              <li><span>대표</span> OOO</li>
+              <li><span>주소</span> OO시 OO구 OOOO로 111</li>
+              <li><span>사업자등록번호</span> 111-11-11111</li>
+              <li><span>대표전화</span> 010-1234-5678</li>
+            </ul>
+            <div class="footLogo">
+              <a href="/">
+                <img src="./_img/logo02_w.png" alt="365셀카" />
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="footMenu">
+          <div class="inner clearfix">
+            <ul class="footNav clearfix">
+              <li><a href="javascript:void(0)">회사소개</a></li>
+              <li class="siteBtn"><a href="javascript:void(0)">이용약관</a></li>
+              <li class="perBtn">
+                <a href="javascript:void(0)">개인정보처리방침</a>
               </li>
             </ul>
           </div>
         </article>
-      </div>
-    </section>
-    <!-- // counseling -->
-
-    <section id="procedure" class="scroll-spy">
-      <div class="inner clearfix">
-        <div class="titArea back-to-position to-bottom delay-0">
-          <strong>매입 절차 안내</strong>
-          <h4>Sales procedure</h4>
-        </div>
-        <article class="diagram">
-          <ul class="clearfix">
-            <li class="diaApplication back-to-position to-top delay-0">
-              <figure>
-                <img src="./_img/ico_sale01.png" alt="상담신청">
-              </figure>
-              <div class="txtArea">
-                <h5>상담신청</h5>
-                <p>
-                  "내차판매"에서 정보를 입력 후 <br>
-                  상담신청 버튼을 눌러주세요.
-                </p>
-              </div>
-            </li>
-            <li class="diaCounseling back-to-position to-top delay-1">
-              <figure>
-                <img src="./_img/ico_sale02.png" alt="담당자 상담">
-              </figure>
-              <div class="txtArea">
-                <h5>담당자 상담</h5>
-                <p>
-                  접수된 상담요청을 바탕으로 <br>
-                  고객님께 연락드립니다.
-                </p>
-              </div>
-            </li>
-            <li class="diaDiagnosis back-to-position to-top delay-2">
-              <figure>
-                <img src="./_img/ico_sale03.png" alt="출장진단 & 가격상담">
-              </figure>
-              <div class="txtArea">
-                <h5>출장진단 &amp; 가격상담</h5>
-                <p>
-                  담당자가 방문하여 <br>
-                  맞춤상담을 도와드립니다.
-                </p>
-              </div>
-            </li>
-            <li class="diaContract back-to-position to-top delay-3">
-              <figure>
-                <img src="./_img/ico_sale04.png" alt="계약 후 차량대금송금">
-              </figure>
-              <div class="txtArea">
-                <h5>계약 후 차량대금송금</h5>
-                <p>
-                  거래가 성사되면 계약서 작성 후 <br>
-                  차량대금을 입급해드립니다.
-                </p>
-              </div>
-            </li>
-            <li class="diaConsignment back-to-position to-top delay-4">
-              <figure>
-                <img src="./_img/ico_sale05.png" alt="차량탁송">
-              </figure>
-              <div class="txtArea">
-                <div class="txtArea">
-                  <h5>차량탁송</h5>
-                  <p>
-                    입금확인이 완료되면 <br>
-                    담당자가 차량을 탁송합니다.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="diaCompletion back-to-position to-top delay-5">
-              <figure>
-                <img src="./_img/ico_sale06.png" alt="명의이전 & 거래완료">
-              </figure>
-              <div class="txtArea">
-                <h5>명의이전 &amp; 거래완료</h5>
-                <p>
-                  명의이전이 완료된 후 <br>
-                  모든 판매과정이 완료됩니다.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </article>
-      </div>
-    </section>
-    <!-- // procedure -->
-
-    <section id="guide" class="scroll-spy">
-      <div class="inner clearfix">
-        <div class="titArea back-to-position to-txt-left delay-0">
-          <strong>매매 가이드</strong>
-          <h4>Sales guide</h4>
-        </div>
-        <article class="guideDetail">
-          <ul>
-            <li class="guiSale back-to-position to-right delay-3">
-              <a href="/guide_sale.html">
-                <h5>간편한 내차판매</h5>
-              </a>
-            </li>
-            <li class="guiPurchase back-to-position to-right delay-2">
-              <a href="/guide_purchase.html">
-                <h5>합리적 내차구매</h5>
-              </a>
-            </li>
-            <li class="guiAssurance back-to-position to-right delay-1">
-              <a href="guide_assurance.html">
-                <h5>제조사별 보증기간</h5>
-              </a>
-            </li>
-            <li class="guiFaq back-to-position to-right delay-0">
-              <a href="guide_faq.html">
-                <h5>자주묻는질문</h5>
-              </a>
-            </li>
-          </ul>
-        </article>
-      </div>
-    </section>
-    <!-- // guide -->
-
-    <section id="review" class="scroll-spy">
-      <div class="inner">
-        <div class="titArea back-to-position to-txt-left delay-0">
-          <strong>매매후기</strong>
-          <h4>Review</h4>
-        </div>
-        <div class="swiper-container back-to-position to-right delay-1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="javascript:void(0)">
-                <figure>
-                  <img src="./_img/review.png" alt="리뷰">
-                </figure>
-                <div class="txtArea">
-                  <h5>안녕하세요</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quo ducimus, consequatur placeat
-                    similique tempora eligendi veniam accusamus consequuntur ut repellat molestias reprehenderit
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="javascript:void(0)">
-                <figure>
-                  <img src="./_img/review.png" alt="리뷰">
-                </figure>
-                <div class="txtArea">
-                  <h5>안녕하세요</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quo ducimus, consequatur placeat
-                    similique tempora eligendi veniam accusamus consequuntur ut repellat molestias reprehenderit
-                  </p>
-                </div>
-              </a>
-            </div>
+        <article class="footRight">
+          <div class="inner">
+            <p>
+              © 2021 305Sellcar All Rights Reverved &amp; Designed by 305Sellcar
+            </p>
           </div>
-        </div>
-        <div class="swiper-button-prev back-to-position to-right delay-1"></div>
-        <div class="swiper-button-next back-to-position to-right delay-1"></div>
-      </div>
-    </section>
-    <!-- // review -->
+        </article>
+      </footer>
+      <!-- // footer -->
 
-    <footer>
-      <article class="footCopy">
-        <div class="inner">
-          <ul>
-            <li><span>상호</span> OOOO</li>
-            <li><span>대표</span> OOO</li>
-            <li><span>주소</span> OO시 OO구 OOOO로 111</li>
-            <li><span>사업자등록번호</span> 111-11-11111</li>
-            <li><span>대표전화</span> 010-1234-5678</li>
-          </ul>
-          <div class="footLogo">
-            <a href="/">
-              <img src="./_img/logo02_w.png" alt="365셀카">
-            </a>
-          </div>
-        </div>
-      </article>
-      <article class="footMenu">
-        <div class="inner clearfix">
-          <ul class="footNav clearfix">
-            <li><a href="javascript:void(0)">회사소개</a></li>
-            <li class="siteBtn"><a href="javascript:void(0)">이용약관</a></li>
-            <li class="perBtn"><a href="javascript:void(0)">개인정보처리방침</a></li>
-          </ul>
-        </div>
-      </article>
-      <article class="footRight">
-        <div class="inner">
-          <p>© 2021 305Sellcar All Rights Reverved &amp; Designed by 305Sellcar</p>
-        </div>
-      </article>
-    </footer>
-    <!-- // footer -->
-
-    <button id="topBtn">
-      <span class="material-icons">
-        arrow_upward
-      </span>
-    </button>
-    <!-- // topBtn -->
-
-  </div>
-</body>
-
+      <button id="topBtn">
+        <span class="material-icons"> arrow_upward </span>
+      </button>
+      <!-- // topBtn -->
+    </div>
+  </body>
 </html>
